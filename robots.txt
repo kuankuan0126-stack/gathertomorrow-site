@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kuankuan0126-stack.github.io/gathertomorrow-site/sitemap.xml

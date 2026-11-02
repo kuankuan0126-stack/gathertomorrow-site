@@ -1,0 +1,12 @@
+# Gather Tomorrow LLC
+
+> Gather Tomorrow LLC is an AI automation consulting firm for small businesses in the US and Taiwan, run by partners Angela and Sam. We help small-business owners and salespeople set up practical AI automations (payment reminders, faster quote replies, lead finding) using tools they already have. Site is English-only for now.
+
+Contact: support@gathertomorrow.com
+
+## Sections
+
+- [Field Notes](https://kuankuan0126-stack.github.io/gathertomorrow-site/#notes): plain-language notes on what we're building
+- [Tools](https://kuankuan0126-stack.github.io/gathertomorrow-site/#tools): small AI tools you can try
+- [Case Studies](https://kuankuan0126-stack.github.io/gathertomorrow-site/#cases): how it works in practice
+- [Book a consultation](https://kuankuan0126-stack.github.io/gathertomorrow-site/#book): tell us what's taking up your time
