@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script src="assets/lang.js"></script>
 <title>Gather Tomorrow LLC — Practical AI Automation for Small Businesses</title>
 <meta name="description" content="Gather Tomorrow helps small-business owners and salespeople use AI automation to save time on follow-ups, quotes, and lead finding.">
@@ -60,39 +60,53 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header class="nav">
-  <div class="wrap nav-inner">
+  <div class="wrap nav-row">
     <a class="logo" href="#top">Gather<span>Tomorrow</span></a>
-    <nav aria-label="Primary">
+    <nav class="nav-panel" id="site-nav" aria-label="Primary">
       <a href="#notes">Field Notes</a>
       <a href="tools/index.html">Tools</a>
       <a href="#cases">Case Studies</a>
       <a href="#book" class="btn btn-sm">Book a consultation</a>
+    </nav>
+    <div class="nav-tools">
       <div class="lang-toggle" role="group" aria-label="Language">
         <a class="lang-link" href="zh/index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-label="繁體中文">中</a><span aria-hidden="true">／</span><a class="lang-link" href="index.html" lang="en" hreflang="en" data-set-lang="en" aria-current="true" aria-label="English">EN</a>
       </div>
-    </nav>
+      <label class="nav-toggle">
+        <span class="visually-hidden">Menu</span>
+        <input class="nav-check" type="checkbox" aria-controls="site-nav">
+        <svg class="icon-menu" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M2 5h14M2 9h14M2 13h14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="icon-close" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M4 4l10 10M14 4L4 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </label>
+    </div>
   </div>
 </header>
 
 <main id="top">
 <section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">AI automation · for small businesses</p>
-    <h1>Spend less time on busywork.<br><span class="accent">Let AI handle the follow-ups.</span></h1>
+  <div class="wrap hero-grid">
+    <h1>Spend less time on busywork.<br><span class="accent">Let AI handle the <span class="keep">follow-ups.</span></span></h1>
     <p class="lead">We help small-business owners and salespeople set up practical AI automations — payment reminders, faster quote replies, lead finding — using tools you already have. No coding required on your side.</p>
     <div class="cta-row">
       <a href="#book" class="btn">Book a consultation</a>
       <a href="#notes" class="btn btn-ghost">Read the field notes</a>
     </div>
+    <p class="hero-note">AI automation · for small businesses</p>
   </div>
+  <div class="hero-rule" aria-hidden="true"></div>
 </section>
 
 <section id="notes" class="section">
   <div class="wrap">
-    <p class="eyebrow">Field notes</p>
-    <h2>What we're building, written plainly</h2>
-    <p class="sub">Short notes from real small-business workflows. Format: the problem → the tools and how → before vs. after. Full articles coming soon.</p>
+    <div class="section-head">
+      <div class="section-title">
+        <h2>What we're building, written plainly</h2>
+        <p class="section-note">Field notes</p>
+      </div>
+      <p class="sub">Short notes from real small-business workflows. Format: the problem → the tools and how → before vs. after. Full articles coming soon.</p>
+    </div>
     <div class="grid3">
       <article class="card">
         <span class="tag">Coming soon · draft excerpt</span>
@@ -139,9 +153,13 @@
 
 <section id="tools" class="section alt">
   <div class="wrap">
-    <p class="eyebrow">Mini tools</p>
-    <h2>Small AI tools you can try</h2>
-    <p class="sub">These try-it tools are still being written. Ready-made tools and consulting plans are on the <a href="tools/index.html">Tools page</a>.</p>
+    <div class="section-head">
+      <div class="section-title">
+        <h2>Small AI tools you can try</h2>
+        <p class="section-note">Mini tools</p>
+      </div>
+      <p class="sub">These try-it tools are still being written. Ready-made tools and consulting plans are on the <a href="tools/index.html">Tools page</a>.</p>
+    </div>
     <div class="grid3">
       <div class="card tool"><span class="tag">Coming soon</span><h3>Reminder email writer</h3><p>Turn invoice details into a friendly, professional payment reminder.</p></div>
       <div class="card tool"><span class="tag">Coming soon</span><h3>Quote reply helper</h3><p>Paste a customer inquiry, get a clear first-draft reply.</p></div>
@@ -152,8 +170,12 @@
 
 <section id="cases" class="section">
   <div class="wrap">
-    <p class="eyebrow">Case studies</p>
-    <h2>How it works in practice</h2>
+    <div class="section-head">
+      <div class="section-title">
+        <h2>How it works in practice</h2>
+        <p class="section-note">Case studies</p>
+      </div>
+    </div>
     <div class="grid2">
       <article class="card case">
         <span class="tag">Case study</span>
@@ -176,9 +198,13 @@
 
 <section id="book" class="section alt">
   <div class="wrap narrow">
-    <p class="eyebrow">Book a consultation</p>
-    <h2>Tell us what's taking up your time</h2>
-    <p class="sub">We'll reply by email to set up a short call.</p>
+    <div class="section-head">
+      <div class="section-title">
+        <h2>Tell us what's taking up your time</h2>
+        <p class="section-note">Book a consultation</p>
+      </div>
+      <p class="sub">We'll reply by email to set up a short call.</p>
+    </div>
 
     <!-- ============================================================
          TALLY FORM EMBED GOES HERE
@@ -190,9 +216,9 @@
          <script async src="https://tally.so/widgets/embed.js"></script>
          ============================================================ -->
     <form class="form" action="mailto:support@gathertomorrow.com" method="post" enctype="text/plain">
-      <label>Name<input name="name" required></label>
-      <label>Company<input name="company"></label>
-      <label>Email<input type="email" name="email" required></label>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Company<input name="company" autocomplete="organization"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
       <label>What do you need help with?<textarea name="message" rows="4"></textarea></label>
       <button class="btn" type="submit">Send request</button>
     </form>
