@@ -1,24 +1,76 @@
 <!DOCTYPE html>
-<!-- Language: English (v1). For Traditional Chinese later, copy this file to /zh-tw/index.html,
-     set lang="zh-Hant", translate the text, and use the language switch link in the header. -->
+<!-- English home page. Traditional Chinese: /zh/. Language choice: assets/lang.js -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/lang.js"></script>
 <title>Gather Tomorrow LLC — Practical AI Automation for Small Businesses</title>
 <meta name="description" content="Gather Tomorrow helps small-business owners and salespeople use AI automation to save time on follow-ups, quotes, and lead finding.">
-<link rel="alternate" hreflang="en" href="./">
+<link rel="canonical" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/">
+<link rel="alternate" hreflang="en" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/">
+<link rel="alternate" hreflang="zh-Hant" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/">
+<link rel="alternate" hreflang="x-default" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gather Tomorrow LLC">
+<meta property="og:title" content="Gather Tomorrow LLC — Practical AI Automation for Small Businesses">
+<meta property="og:description" content="Gather Tomorrow helps small-business owners and salespeople use AI automation to save time on follow-ups, quotes, and lead finding.">
+<meta property="og:url" content="https://kuankuan0126-stack.github.io/gathertomorrow-site/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#organization",
+      "name": "Gather Tomorrow LLC",
+      "alternateName": "Gather Tomorrow",
+      "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/",
+      "email": "support@gathertomorrow.com",
+      "description": "AI automation consulting for small businesses in the United States and Taiwan.",
+      "areaServed": [{"@type": "Country", "name": "United States"}, {"@type": "Country", "name": "Taiwan"}],
+      "knowsAbout": ["AI automation", "Small business automation", "Sales follow-up automation"],
+      "founder": [{"@type": "Person", "name": "Angela"}, {"@type": "Person", "name": "Sam"}],
+      "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "support@gathertomorrow.com", "availableLanguage": ["English", "zh-Hant"]}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#website",
+      "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/",
+      "name": "Gather Tomorrow LLC",
+      "inLanguage": ["en", "zh-Hant"],
+      "publisher": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#organization"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#webpage",
+      "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/",
+      "name": "Gather Tomorrow LLC — Practical AI Automation for Small Businesses",
+      "description": "Gather Tomorrow helps small-business owners and salespeople use AI automation to save time on follow-ups, quotes, and lead finding.",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#website"},
+      "about": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#organization"}
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="logo" href="#top">Gather<span>Tomorrow</span></a>
-    <nav>
-      <a href="#notes">Field Notes</a><a href="#tools">Tools</a><a href="#cases">Case Studies</a>
+    <nav aria-label="Primary">
+      <a href="#notes">Field Notes</a>
+      <a href="tools/index.html">Tools</a>
+      <a href="#cases">Case Studies</a>
       <a href="#book" class="btn btn-sm">Book a consultation</a>
-      <!-- Language switch (enable when Chinese version exists): <a href="zh-tw/">繁中</a> -->
-      <span class="lang" title="Traditional Chinese coming later">EN</span>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <a class="lang-link" href="zh/index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-label="繁體中文">中</a><span aria-hidden="true">／</span><a class="lang-link" href="index.html" lang="en" hreflang="en" data-set-lang="en" aria-current="true" aria-label="English">EN</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -89,6 +141,7 @@
   <div class="wrap">
     <p class="eyebrow">Mini tools</p>
     <h2>Small AI tools you can try</h2>
+    <p class="sub">These try-it tools are still being written. Ready-made tools and consulting plans are on the <a href="tools/index.html">Tools page</a>.</p>
     <div class="grid3">
       <div class="card tool"><span class="tag">Coming soon</span><h3>Reminder email writer</h3><p>Turn invoice details into a friendly, professional payment reminder.</p></div>
       <div class="card tool"><span class="tag">Coming soon</span><h3>Quote reply helper</h3><p>Paste a customer inquiry, get a clear first-draft reply.</p></div>
