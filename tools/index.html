@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script src="../assets/lang.js"></script>
 <title>Tools — Gather Tomorrow LLC</title>
 <meta name="description" content="Example ready-made AI tools and consulting plans from Gather Tomorrow. Nothing is for sale yet; prices are still TBD.">
@@ -39,34 +39,48 @@
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header class="nav">
-  <div class="wrap nav-inner">
+  <div class="wrap nav-row">
     <a class="logo" href="../index.html">Gather<span>Tomorrow</span></a>
-    <nav aria-label="Primary">
+    <nav class="nav-panel" id="site-nav" aria-label="Primary">
       <a href="../index.html#notes">Field Notes</a>
       <a href="index.html" aria-current="page">Tools</a>
       <a href="../index.html#cases">Case Studies</a>
       <a href="../index.html#book" class="btn btn-sm">Book a consultation</a>
+    </nav>
+    <div class="nav-tools">
       <div class="lang-toggle" role="group" aria-label="Language">
         <a class="lang-link" href="../zh/tools/index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-label="繁體中文">中</a><span aria-hidden="true">／</span><a class="lang-link" href="index.html" lang="en" hreflang="en" data-set-lang="en" aria-current="true" aria-label="English">EN</a>
       </div>
-    </nav>
+      <label class="nav-toggle">
+        <span class="visually-hidden">Menu</span>
+        <input class="nav-check" type="checkbox" aria-controls="site-nav">
+        <svg class="icon-menu" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M2 5h14M2 9h14M2 13h14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="icon-close" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M4 4l10 10M14 4L4 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </label>
+    </div>
   </div>
 </header>
 
 <main id="top">
 <section class="hero hero-compact">
-  <div class="wrap">
-    <p class="eyebrow">Tools</p>
+  <div class="wrap hero-grid">
     <h1>Ready-made tools, and help building your own.</h1>
     <p class="lead">Two ways to use Gather Tomorrow. Pick a ready-made tool when we publish it, or ask us to set up automation around the way your business already works. The prices below are not set, and the tool cards are examples.</p>
+    <p class="hero-note">Tools</p>
   </div>
+  <div class="hero-rule" aria-hidden="true"></div>
 </section>
 
 <section id="ready" class="section">
   <div class="wrap">
-    <p class="eyebrow">Ready-made</p>
-    <h2>Paid tools</h2>
+    <div class="section-head">
+      <div class="section-title">
+        <h2>Paid tools</h2>
+        <p class="section-note">Ready-made</p>
+      </div>
+    </div>
     <p class="notice"><strong>Examples only.</strong> These cards are not a catalog you can buy from today. Each one has a marked spot for a Stripe Payment Link later. The Buy button does not go anywhere.</p>
     <div class="grid3">
       <article class="card tool-card">
@@ -117,9 +131,13 @@
 
 <section id="consult" class="section alt">
   <div class="wrap">
-    <p class="eyebrow">Consulting</p>
-    <h2>Consulting and customization</h2>
-    <p class="sub">We set the workflow up with the tools you already use, and we leave the decision to send with you.</p>
+    <div class="section-head">
+      <div class="section-title">
+        <h2>Consulting and customization</h2>
+        <p class="section-note">Consulting</p>
+      </div>
+      <p class="sub">We set the workflow up with the tools you already use, and we leave the decision to send with you.</p>
+    </div>
     <div class="grid3">
       <article class="card">
         <span class="tag">Plan</span>
