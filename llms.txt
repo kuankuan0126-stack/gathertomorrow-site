@@ -1,12 +1,23 @@
 # Gather Tomorrow LLC
 
-> Gather Tomorrow LLC is an AI automation consulting firm for small businesses in the US and Taiwan, run by partners Angela and Sam. We help small-business owners and salespeople set up practical AI automations (payment reminders, faster quote replies, lead finding) using tools they already have. Site is English-only for now.
+> Gather Tomorrow LLC is an AI automation consulting firm for small businesses in the US and Taiwan, run by partners Angela and Sam. We help small-business owners and salespeople set up practical AI automations (payment reminders, faster quote replies, lead finding) using tools they already have. The site is available in English and Traditional Chinese (Taiwan).
 
 Contact: support@gathertomorrow.com
 
-## Sections
+## English
 
+- [Home](https://kuankuan0126-stack.github.io/gathertomorrow-site/): overview
 - [Field Notes](https://kuankuan0126-stack.github.io/gathertomorrow-site/#notes): plain-language notes on what we're building
-- [Tools](https://kuankuan0126-stack.github.io/gathertomorrow-site/#tools): small AI tools you can try
+- [Mini tools](https://kuankuan0126-stack.github.io/gathertomorrow-site/#tools): small try-it tools, still coming soon
+- [Tools](https://kuankuan0126-stack.github.io/gathertomorrow-site/tools/): example ready-made tools and consulting plans (not for sale yet; prices TBD)
 - [Case Studies](https://kuankuan0126-stack.github.io/gathertomorrow-site/#cases): how it works in practice
 - [Book a consultation](https://kuankuan0126-stack.github.io/gathertomorrow-site/#book): tell us what's taking up your time
+
+## 繁體中文
+
+- [首頁](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/): 總覽
+- [現場筆記](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#notes): 用白話說明我們正在做的事
+- [小工具](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#tools): 首頁上的試用工具，尚未推出
+- [工具](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/tools/): 現成工具與諮詢方案範例（尚未開賣，價格待定）
+- [案例](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#cases): 實際怎麼運作
+- [預約諮詢](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#book): 告訴我們什麼事佔掉了你的時間
