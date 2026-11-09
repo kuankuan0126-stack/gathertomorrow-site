@@ -3,17 +3,19 @@
 This is the public website for Gather Tomorrow LLC. It's a static site: English at the root, Traditional Chinese under `zh/`. There is nothing to install or build. Hosting is GitHub Pages from the default branch today. Firebase Hosting setup for Sam is in `DEPLOY-FIREBASE.md`.
 
 ## What each file does
-- **index.html** — English home page (hero, field notes, mini tools, case studies, booking form).
+- **index.html** — English home page (hero, field notes, mini tools, case studies, FAQ, booking form).
 - **zh/index.html** — Traditional Chinese (Taiwan) home page.
 - **tools/index.html** — English Tools page: example paid-tool cards and consulting plans. Nothing is for sale. Buy buttons have no link. Each card has an empty `data-stripe-payment-link` for a future Stripe Payment Link.
 - **zh/tools/index.html** — Traditional Chinese Tools page.
-- **assets/style.css** — The look: colors, fonts, spacing. The main colors are at the top (`--accent` is the teal highlight).
+- **assets/style.css** — The look: colors, fonts, spacing. Cream paper, warm charcoal text, one terracotta accent (`--accent`).
 - **assets/lang.js** — Picks English or Chinese on the first visit from the browser language, and remembers the header choice in `localStorage` (`gt-lang`). No IP lookup.
+- **assets/nav.js** — Progressive enhancement for the mobile menu (aria-expanded, Escape, close after a link). The menu still opens with CSS if this file does not run.
+- **CHANGELOG.md** — Notable site changes, including the 2026-11-09 redesign.
 - **firebase.json**, **.firebaserc** — Firebase Hosting config. The project id is the placeholder `YOUR_FIREBASE_PROJECT_ID` until Sam replaces it. No keys live here.
 - **.github/workflows/firebase-hosting.yml** — Preview deploy on pull requests, live deploy on push to `main`. Reads the `FIREBASE_SERVICE_ACCOUNT` secret.
 - **DEPLOY-FIREBASE.md** — Sam's deploy steps, including the custom domain and leaving MX records alone.
 - **.nojekyll** — Tells GitHub Pages to publish the site as-is. Leave it alone.
-- **robots.txt**, **sitemap.xml**, **llms.txt** — Discovery files for search and answer engines.
+- **robots.txt**, **sitemap.xml**, **llms.txt** — Discovery files for search and answer engines. `robots.txt` allows ordinary crawlers and the named AI search and training crawlers.
 
 ## Languages
 The header on every page has **中／EN**. The first visit follows the browser language: any `zh*` language gets Traditional Chinese, everything else gets English. After someone uses the toggle, that choice overrides the browser on later visits. Both languages stay at their own URLs, so a shared link still opens that page.

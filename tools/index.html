@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F3EEE6">
 <script src="../assets/lang.js"></script>
 <title>Tools — Gather Tomorrow LLC</title>
 <meta name="description" content="Example ready-made AI tools and consulting plans from Gather Tomorrow. Nothing is for sale yet; prices are still TBD.">
@@ -36,30 +37,43 @@
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header class="nav">
-  <div class="wrap nav-inner">
+  <div class="wrap nav-row">
     <a class="logo" href="../index.html">Gather<span>Tomorrow</span></a>
-    <nav aria-label="Primary">
+    <nav class="nav-panel" id="site-nav" aria-label="Primary">
       <a href="../index.html#notes">Field Notes</a>
       <a href="index.html" aria-current="page">Tools</a>
       <a href="../index.html#cases">Case Studies</a>
+      <a href="../index.html#faq">FAQ</a>
       <a href="../index.html#book" class="btn btn-sm">Book a consultation</a>
+    </nav>
+    <div class="nav-tools">
       <div class="lang-toggle" role="group" aria-label="Language">
         <a class="lang-link" href="../zh/tools/index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-label="繁體中文">中</a><span aria-hidden="true">／</span><a class="lang-link" href="index.html" lang="en" hreflang="en" data-set-lang="en" aria-current="true" aria-label="English">EN</a>
       </div>
-    </nav>
+      <label class="nav-toggle">
+        <span class="visually-hidden">Menu</span>
+        <input class="nav-check" type="checkbox" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </label>
+    </div>
   </div>
 </header>
 
 <main id="top">
 <section class="hero hero-compact">
   <div class="wrap">
+    <span class="mark" aria-hidden="true"></span>
     <p class="eyebrow">Tools</p>
     <h1>Ready-made tools, and help building your own.</h1>
-    <p class="lead">Two ways to use Gather Tomorrow. Pick a ready-made tool when we publish it, or ask us to set up automation around the way your business already works. The prices below are not set, and the tool cards are examples.</p>
+    <p class="page-summary">Two ways to use Gather Tomorrow. Pick a ready-made tool when we publish it, or ask us to set up automation around the way your business already works. The prices below are not set, and the tool cards are examples.</p>
   </div>
 </section>
 
@@ -148,6 +162,18 @@
 </section>
 </main>
 
-<footer class="footer"><div class="wrap">© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></div></footer>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <nav aria-label="Footer">
+      <a href="../index.html#notes">Field Notes</a>
+      <a href="index.html">Tools</a>
+      <a href="../index.html#cases">Case Studies</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../index.html#book">Book a consultation</a>
+    </nav>
+    <p>© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></p>
+  </div>
+</footer>
+<script src="../assets/nav.js"></script>
 </body>
 </html>

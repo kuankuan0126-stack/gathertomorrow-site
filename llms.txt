@@ -11,6 +11,7 @@ Contact: support@gathertomorrow.com
 - [Mini tools](https://kuankuan0126-stack.github.io/gathertomorrow-site/#tools): small try-it tools, still coming soon
 - [Tools](https://kuankuan0126-stack.github.io/gathertomorrow-site/tools/): example ready-made tools and consulting plans (not for sale yet; prices TBD)
 - [Case Studies](https://kuankuan0126-stack.github.io/gathertomorrow-site/#cases): how it works in practice
+- [FAQ](https://kuankuan0126-stack.github.io/gathertomorrow-site/#faq): who we help, coding, consultations, and services. Pricing and project length are not published yet.
 - [Book a consultation](https://kuankuan0126-stack.github.io/gathertomorrow-site/#book): tell us what's taking up your time
 
 ## 繁體中文
@@ -20,4 +21,5 @@ Contact: support@gathertomorrow.com
 - [小工具](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#tools): 首頁上的試用工具，尚未推出
 - [工具](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/tools/): 現成工具與諮詢方案範例（尚未開賣，價格待定）
 - [案例](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#cases): 實際怎麼運作
+- [常見問題](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#faq): 協助對象、是否需要寫程式、諮詢方式與服務範圍。價格與專案時長尚未公布。
 - [預約諮詢](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#book): 告訴我們什麼事佔掉了你的時間

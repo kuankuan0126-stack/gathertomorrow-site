@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F3EEE6">
 <script src="assets/lang.js"></script>
 <title>Gather Tomorrow LLC — Practical AI Automation for Small Businesses</title>
 <meta name="description" content="Gather Tomorrow helps small-business owners and salespeople use AI automation to save time on follow-ups, quotes, and lead finding.">
@@ -53,38 +54,103 @@
       "inLanguage": "en",
       "isPartOf": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#website"},
       "about": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#organization"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#faq",
+      "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#faq",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#webpage"},
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of companies do you help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Small-business owners and salespeople in the United States and Taiwan. The practical work is AI automation for follow-ups, quotes, and finding leads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to know how to code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We set up practical automations using tools you already have. No coding is required on your side."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a consultation work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send your name, company, email, and what you need help with. We'll reply by email to set up a short call. You can also write to support@gathertomorrow.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services do you offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The site describes help with payment reminders, faster quote replies, and finding leads, using tools you already have. It also shows example ready-made tools, which are not for sale yet, and three consulting plans: one workflow, a connected set, and a custom build. Prices are not set."
+          }
+        }
+      ]
     }
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header class="nav">
-  <div class="wrap nav-inner">
+  <div class="wrap nav-row">
     <a class="logo" href="#top">Gather<span>Tomorrow</span></a>
-    <nav aria-label="Primary">
+    <nav class="nav-panel" id="site-nav" aria-label="Primary">
       <a href="#notes">Field Notes</a>
       <a href="tools/index.html">Tools</a>
       <a href="#cases">Case Studies</a>
+      <a href="#faq">FAQ</a>
       <a href="#book" class="btn btn-sm">Book a consultation</a>
+    </nav>
+    <div class="nav-tools">
       <div class="lang-toggle" role="group" aria-label="Language">
         <a class="lang-link" href="zh/index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-label="繁體中文">中</a><span aria-hidden="true">／</span><a class="lang-link" href="index.html" lang="en" hreflang="en" data-set-lang="en" aria-current="true" aria-label="English">EN</a>
       </div>
-    </nav>
+      <label class="nav-toggle">
+        <span class="visually-hidden">Menu</span>
+        <input class="nav-check" type="checkbox" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </label>
+    </div>
   </div>
 </header>
 
 <main id="top">
 <section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">AI automation · for small businesses</p>
-    <h1>Spend less time on busywork.<br><span class="accent">Let AI handle the follow-ups.</span></h1>
-    <p class="lead">We help small-business owners and salespeople set up practical AI automations — payment reminders, faster quote replies, lead finding — using tools you already have. No coding required on your side.</p>
-    <div class="cta-row">
-      <a href="#book" class="btn">Book a consultation</a>
-      <a href="#notes" class="btn btn-ghost">Read the field notes</a>
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <span class="mark" aria-hidden="true"></span>
+      <p class="eyebrow">AI automation · for small businesses</p>
+      <h1>Spend less time on busywork.<br><span class="accent">Let AI handle the <span class="keep">follow-ups.</span></span></h1>
+      <p class="page-summary">This page gathers plain-language field notes on payment reminders, quote replies, and lead finding, plus mini tools that are still being written, a payment-reminder case study, common questions, and a form to book a consultation.</p>
+      <p class="lead">We help small-business owners and salespeople set up practical AI automations — payment reminders, faster quote replies, lead finding — using tools you already have. No coding required on your side.</p>
+      <div class="cta-row">
+        <a href="#book" class="btn">Book a consultation</a>
+        <a href="#notes" class="btn btn-ghost">Read the field notes</a>
+      </div>
     </div>
+    <aside class="hero-index" aria-label="Field notes">
+      <p>Field notes</p>
+      <ol>
+        <li><a href="#note-reminders">Automated payment reminders that still sound like you</a></li>
+        <li><a href="#note-quotes">Answering quote and service inquiries faster</a></li>
+        <li><a href="#note-leads">Finding leads on social platforms</a></li>
+      </ol>
+    </aside>
   </div>
 </section>
 
@@ -94,7 +160,7 @@
     <h2>What we're building, written plainly</h2>
     <p class="sub">Short notes from real small-business workflows. Format: the problem → the tools and how → before vs. after. Full articles coming soon.</p>
     <div class="grid3">
-      <article class="card">
+      <article class="card" id="note-reminders">
         <span class="tag">Coming soon · draft excerpt</span>
         <h3>Automated payment reminders that still sound like you</h3>
         <dl>
@@ -107,7 +173,7 @@
           <a href="#book" class="diy">Don't want to DIY? We can build it for your company. →</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" id="note-quotes">
         <span class="tag">Coming soon · draft excerpt</span>
         <h3>Answering quote and service inquiries faster</h3>
         <dl>
@@ -120,7 +186,7 @@
           <a href="#book" class="diy">Don't want to DIY? We can build it for your company. →</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" id="note-leads">
         <span class="tag">Coming soon · draft excerpt</span>
         <h3>Finding leads on social platforms</h3>
         <dl>
@@ -174,7 +240,43 @@
   </div>
 </section>
 
-<section id="book" class="section alt">
+<!-- FAQPage JSON-LD lists only questions with published answers.
+     Pricing and project length are visible placeholders and are left out of the schema. -->
+<section id="faq" class="section alt">
+  <div class="wrap narrow">
+    <p class="eyebrow">FAQ</p>
+    <h2>Common questions</h2>
+    <p class="sub">Short answers from what this site already says. Pricing and project length are not published yet.</p>
+    <div class="faq-list">
+      <article class="faq-item">
+        <h3>What kind of companies do you help?</h3>
+        <p>Small-business owners and salespeople in the United States and Taiwan. The practical work is AI automation for follow-ups, quotes, and finding leads.</p>
+      </article>
+      <article class="faq-item">
+        <h3>Do I need to know how to code?</h3>
+        <p>No. We set up practical automations using tools you already have. No coding is required on your side.</p>
+      </article>
+      <article class="faq-item">
+        <h3>How does a consultation work?</h3>
+        <p>Send your name, company, email, and what you need help with. We'll reply by email to set up a short call. You can also write to support@gathertomorrow.com.</p>
+      </article>
+      <article class="faq-item">
+        <h3>What does it cost?</h3>
+        <p class="faq-pending">TBD – pending Angela</p>
+      </article>
+      <article class="faq-item">
+        <h3>What services do you offer?</h3>
+        <p>The site describes help with payment reminders, faster quote replies, and finding leads, using tools you already have. It also shows example ready-made tools, which are not for sale yet, and three consulting plans: one workflow, a connected set, and a custom build. Prices are not set.</p>
+      </article>
+      <article class="faq-item">
+        <h3>How long does a project take?</h3>
+        <p class="faq-pending">TBD – pending Angela</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="section">
   <div class="wrap narrow">
     <p class="eyebrow">Book a consultation</p>
     <h2>Tell us what's taking up your time</h2>
@@ -190,9 +292,9 @@
          <script async src="https://tally.so/widgets/embed.js"></script>
          ============================================================ -->
     <form class="form" action="mailto:support@gathertomorrow.com" method="post" enctype="text/plain">
-      <label>Name<input name="name" required></label>
-      <label>Company<input name="company"></label>
-      <label>Email<input type="email" name="email" required></label>
+      <label>Name<input name="name" autocomplete="name" required></label>
+      <label>Company<input name="company" autocomplete="organization"></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
       <label>What do you need help with?<textarea name="message" rows="4"></textarea></label>
       <button class="btn" type="submit">Send request</button>
     </form>
@@ -201,6 +303,18 @@
 </section>
 </main>
 
-<footer class="footer"><div class="wrap">© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></div></footer>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <nav aria-label="Footer">
+      <a href="#notes">Field Notes</a>
+      <a href="tools/index.html">Tools</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book a consultation</a>
+    </nav>
+    <p>© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></p>
+  </div>
+</footer>
+<script src="assets/nav.js"></script>
 </body>
 </html>
