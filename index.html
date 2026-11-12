@@ -143,34 +143,50 @@
       </div>
       <p class="fine">No coding required on your side</p>
     </div>
-    <aside class="demo-card" aria-label="Fictional payment follow-up example">
-      <p class="demo-label">Payment follow-up</p>
-      <p class="demo-steps">Invoice marked overdue → Reminder draft prepared → You review and send</p>
-      <div class="draft">
-        <p class="draft-label">Example</p>
-        <p class="draft-meta">Draft</p>
-        <p>Hi Alex, just a friendly reminder that invoice #1042…</p>
+    <aside class="demo-card" aria-label="Fictional example workflow">
+      <div class="demo-top">
+        <p class="demo-label">
+          <svg class="ico" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><rect x="1.75" y="3.25" width="12.5" height="9.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1"/><path d="M2 4.2 8 8.4 14 4.2" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+          Example workflow
+        </p>
+        <p class="status">Waiting for your review</p>
       </div>
+      <ol class="mini-rail">
+        <li>Invoice marked overdue</li>
+        <li>Reminder draft prepared</li>
+        <li>You review and send</li>
+      </ol>
+      <div class="draft">
+        <dl class="mail">
+          <div><dt>From</dt><dd>Gather Tomorrow</dd></div>
+          <div><dt>To</dt><dd>Alex</dd></div>
+          <div><dt>Subject</dt><dd>Invoice #1042</dd></div>
+        </dl>
+        <p>Hi Alex, just a friendly reminder that invoice #1042…</p>
+        <p class="status">Draft ready</p>
+      </div>
+      <p class="second-flow">Customer inquiry → Reply draft → Your approval</p>
     </aside>
   </div>
+  <div class="wrap connector" aria-hidden="true"><span></span></div>
 </section>
 
 <section id="services" class="section">
   <div class="wrap">
     <p class="eyebrow">Services</p>
     <h2>What can you automate first?</h2>
-    <div class="grid3">
-      <article class="card">
+    <div class="rules">
+      <article>
         <h3>Payment reminders</h3>
         <p>Chasing unpaid invoices means checking a spreadsheet, writing the same polite email again, and remembering who you already nudged.</p>
         <p class="result">Drafts wait in your inbox, and you stay in control.</p>
       </article>
-      <article class="card">
+      <article>
         <h3>Inquiry replies</h3>
         <p>Inquiries arrive by email and web forms while you're busy; slow replies can lose the job.</p>
         <p class="result">A draft is ready to edit and send.</p>
       </article>
-      <article class="card">
+      <article>
         <h3>Lead organizing</h3>
         <p>Good prospects post on social media every day, but scrolling to find them eats hours.</p>
         <p class="result">A short, organized list to review. You decide who to contact.</p>
@@ -184,29 +200,38 @@
     <p class="eyebrow">Examples</p>
     <h2>Payment-reminder automation</h2>
     <p class="sub">One workflow for overdue invoices. Nothing is sent automatically.</p>
-    <div class="flow">
-      <article>
-        <p class="kind">Before · human</p>
-        <h3>How it was done</h3>
-        <p>Chasing unpaid invoices means checking a spreadsheet, writing the same polite email again, and remembering who you already nudged.</p>
-        <p>Before: manual checking and copy-paste.</p>
-      </article>
-      <article>
-        <p class="kind">What gets built</p>
-        <h3>The workflow</h3>
-        <ol>
-          <li>Invoices live in a Google Sheet: customer, amount, due date, status.</li>
-          <li><span class="kind">Automatic</span> A Make scenario checks the sheet on a schedule for overdue, unpaid rows.</li>
-          <li><span class="kind">Automatic</span> For each one, it creates a personalized Gmail draft — nothing is sent automatically.</li>
-        </ol>
-      </article>
-      <article>
-        <p class="kind">After · human review</p>
-        <h3>How you operate it</h3>
-        <p>The owner reviews, edits if needed, and sends. The sheet records that a reminder went out.</p>
-        <p>After: drafts waiting in your inbox, you stay in control.</p>
-      </article>
-    </div>
+    <ol class="rail">
+      <li>
+        <span class="rail-n">01</span>
+        <div>
+          <p class="kind">Before · human</p>
+          <h3>How it was done</h3>
+          <p>Chasing unpaid invoices means checking a spreadsheet, writing the same polite email again, and remembering who you already nudged.</p>
+          <p>Before: manual checking and copy-paste.</p>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">02</span>
+        <div>
+          <p class="kind">What gets built</p>
+          <h3>The workflow</h3>
+          <ol>
+            <li>Invoices live in a Google Sheet: customer, amount, due date, status.</li>
+            <li><span class="kind">Automatic</span> A Make scenario checks the sheet on a schedule for overdue, unpaid rows.</li>
+            <li><span class="kind">Automatic</span> For each one, it creates a personalized Gmail draft — nothing is sent automatically.</li>
+          </ol>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">03</span>
+        <div>
+          <p class="status">Waiting for your review</p>
+          <h3>How you operate it</h3>
+          <p>The owner reviews, edits if needed, and sends. The sheet records that a reminder went out.</p>
+          <p>After: drafts waiting in your inbox, you stay in control.</p>
+        </div>
+      </li>
+    </ol>
     <p class="fallback"><a href="#notes">Field notes</a></p>
   </div>
 </section>
@@ -215,18 +240,27 @@
   <div class="wrap">
     <p class="eyebrow">How it works</p>
     <h2>How we work together</h2>
-    <ol class="steps">
+    <ol class="rail">
       <li>
-        <h3>Understand your current process</h3>
-        <p>Tell us what's taking up your time, and how the work happens today.</p>
+        <span class="rail-n">01</span>
+        <div>
+          <h3>Understand your current process</h3>
+          <p>Tell us what's taking up your time, and how the work happens today.</p>
+        </div>
       </li>
       <li>
-        <h3>Confirm scope</h3>
-        <p>We agree the workflow, who reviews, and what must never send on its own.</p>
+        <span class="rail-n">02</span>
+        <div>
+          <h3>Confirm scope</h3>
+          <p>We agree the workflow, who reviews, and what must never send on its own.</p>
+        </div>
       </li>
       <li>
-        <h3>Test &amp; hand over</h3>
-        <p>You try the drafts, then run the workflow yourself.</p>
+        <span class="rail-n">03</span>
+        <div>
+          <h3>Test &amp; hand over</h3>
+          <p>You try the drafts, then run the workflow yourself.</p>
+        </div>
       </li>
     </ol>
   </div>
@@ -237,27 +271,33 @@
     <p class="eyebrow">Field notes</p>
     <h2>What we're building, written plainly</h2>
     <p class="sub">Short notes from real small-business workflows.</p>
-    <div class="grid3">
-      <article class="card">
-        <span class="tag">Workflow note</span>
-        <h3>Automated payment reminders that still sound like you</h3>
-        <p class="result">Drafts waiting in your inbox, you stay in control.</p>
-        <p class="chain">Google Sheets → Make → Gmail</p>
-        <p><a class="more" href="notes/payment-reminders/index.html">See the workflow →</a></p>
+    <div class="note-list">
+      <article>
+        <div>
+          <p class="tag">Workflow note</p>
+          <h3>Automated payment reminders that still sound like you</h3>
+          <p class="result">Drafts waiting in your inbox, you stay in control.</p>
+          <p class="chain">Google Sheets → Make → Gmail</p>
+        </div>
+        <a class="more" href="notes/payment-reminders/index.html">See the workflow →</a>
       </article>
-      <article class="card">
-        <span class="tag">Workflow note</span>
-        <h3>Answering quote and service inquiries faster</h3>
-        <p class="result">A draft ready to edit and send.</p>
-        <p class="chain">Sheet → AI draft</p>
-        <p><a class="more" href="notes/inquiry-replies/index.html">See the workflow →</a></p>
+      <article>
+        <div>
+          <p class="tag">Workflow note</p>
+          <h3>Answering quote and service inquiries faster</h3>
+          <p class="result">A draft ready to edit and send.</p>
+          <p class="chain">Sheet → AI draft</p>
+        </div>
+        <a class="more" href="notes/inquiry-replies/index.html">See the workflow →</a>
       </article>
-      <article class="card">
-        <span class="tag">Workflow note</span>
-        <h3>Finding leads on social platforms</h3>
-        <p class="result">A short, organized list to review.</p>
-        <p class="chain">Saved search → AI summary</p>
-        <p><a class="more" href="notes/lead-organizing/index.html">See the workflow →</a></p>
+      <article>
+        <div>
+          <p class="tag">Workflow note</p>
+          <h3>Finding leads on social platforms</h3>
+          <p class="result">A short, organized list to review.</p>
+          <p class="chain">Saved search → AI summary</p>
+        </div>
+        <a class="more" href="notes/lead-organizing/index.html">See the workflow →</a>
       </article>
     </div>
     <p class="section-cta">Don't want to DIY? <a href="#book">We can build it for your company.</a></p>

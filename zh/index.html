@@ -155,20 +155,40 @@
       </div>
       <p class="fine">你這邊不需要寫程式。</p>
     </div>
-    <aside class="demo-card" aria-label="虛構的催款範例">
-      <!-- 待 Angela 審: 催款後續 -->
-      <p class="demo-label">催款後續</p>
-      <!-- 待 Angela 審: 步驟 -->
-      <p class="demo-steps">發票標成逾期 → 準備提醒草稿 → 你審過再寄出</p>
+    <aside class="demo-card" aria-label="虛構的範例流程">
+      <div class="demo-top">
+        <p class="demo-label">
+          <svg class="ico" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><rect x="1.75" y="3.25" width="12.5" height="9.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1"/><path d="M2 4.2 8 8.4 14 4.2" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+          <!-- 待 Angela 審: 範例流程 -->
+          範例流程
+        </p>
+        <!-- 待 Angela 審: 等你審閱 -->
+        <p class="status">等你審閱</p>
+      </div>
+      <ol class="mini-rail">
+        <!-- 待 Angela 審: 發票標成逾期 -->
+        <li>發票標成逾期</li>
+        <!-- 待 Angela 審: 準備提醒草稿 -->
+        <li>準備提醒草稿</li>
+        <!-- 待 Angela 審: 你審過再寄出 -->
+        <li>你審過再寄出</li>
+      </ol>
       <div class="draft">
-        <!-- 待 Angela 審: 範例 -->
-        <p class="draft-label">範例</p>
-        <p class="draft-meta">草稿</p>
+        <dl class="mail">
+          <div><dt><!-- 待 Angela 審: 寄件者 -->寄件者</dt><dd>Gather Tomorrow</dd></div>
+          <div><dt><!-- 待 Angela 審: 收件者 -->收件者</dt><dd>Alex</dd></div>
+          <div><dt><!-- 待 Angela 審: 主旨 -->主旨</dt><dd><!-- 待 Angela 審: 發票 #1042 -->發票 #1042</dd></div>
+        </dl>
         <!-- 待 Angela 審: 虛構信例 -->
         <p>Alex 你好，溫和提醒一下，發票 #1042…</p>
+        <!-- 待 Angela 審: 草稿就緒 -->
+        <p class="status">草稿就緒</p>
       </div>
+      <!-- 待 Angela 審: 客戶詢問 → 回覆草稿 → 你核准 -->
+      <p class="second-flow">客戶詢問 → 回覆草稿 → 你核准</p>
     </aside>
   </div>
+  <div class="wrap connector" aria-hidden="true"><span></span></div>
 </section>
 
 <section id="services" class="section">
@@ -177,19 +197,19 @@
     <p class="eyebrow">服務</p>
     <!-- 待 Angela 審: 可以先自動化什麼 -->
     <h2>可以先自動化什麼？</h2>
-    <div class="grid3">
-      <article class="card">
+    <div class="rules">
+      <article>
         <h3>催款提醒</h3>
         <p>追未付款的發票，就是對著試算表核對、一再寫同樣有禮的信，還得記住上次提醒過誰。</p>
         <p class="result">草稿在收件匣等你，決定權仍在你手上。</p>
       </article>
-      <article class="card">
+      <article>
         <!-- 待 Angela 審: 詢問回覆 -->
         <h3>詢問回覆</h3>
         <p>詢問從電子郵件和網站表單進來，你正忙的時候，回得慢就可能失去這筆生意。</p>
         <p class="result">草稿就緒，改一改就能寄出。</p>
       </article>
-      <article class="card">
+      <article>
         <!-- 待 Angela 審: 名單整理 -->
         <h3>名單整理</h3>
         <p>合適的潛在客戶每天都在社群上發文，但一直滑著找，會吃掉好幾個小時。</p>
@@ -206,35 +226,44 @@
     <h2>催款提醒自動化</h2>
     <!-- 待 Angela 審: 流程導言 -->
     <p class="sub">一個處理逾期發票的流程。不會自動寄出。</p>
-    <div class="flow">
-      <article>
-        <!-- 待 Angela 審: 以前 · 人工 -->
-        <p class="kind">以前 · 人工</p>
-        <!-- 待 Angela 審: 以前怎麼做 -->
-        <h3>以前怎麼做</h3>
-        <p>追未付款的發票，就是對著試算表核對、一再寫同樣有禮的信，還得記住上次提醒過誰。</p>
-        <p>之前：手動核對、複製貼上。</p>
-      </article>
-      <article>
-        <!-- 待 Angela 審: 會建什麼 -->
-        <p class="kind">會建什麼</p>
-        <!-- 待 Angela 審: 這個流程 -->
-        <h3>這個流程</h3>
-        <ol>
-          <li>發票記在一份 Google 試算表：客戶、金額、到期日、狀態。</li>
-          <li><!-- 待 Angela 審: 自動 --><span class="kind">自動</span> Make 的情境依排程檢查試算表，找出逾期且未付款的列。</li>
-          <li><!-- 待 Angela 審: 自動 --><span class="kind">自動</span> 每一列產生一封個人化的 Gmail 草稿——不會自動寄出。</li>
-        </ol>
-      </article>
-      <article>
-        <!-- 待 Angela 審: 之後 · 人工審 -->
-        <p class="kind">之後 · 人工審</p>
-        <!-- 待 Angela 審: 之後你怎麼用 -->
-        <h3>之後你怎麼用</h3>
-        <p>負責人審閱、必要時修改，再自行寄出。試算表會記下已經提醒過。</p>
-        <p>之後：草稿在收件匣等你，決定權仍在你手上。</p>
-      </article>
-    </div>
+    <ol class="rail">
+      <li>
+        <span class="rail-n">01</span>
+        <div>
+          <!-- 待 Angela 審: 以前 · 人工 -->
+          <p class="kind">以前 · 人工</p>
+          <!-- 待 Angela 審: 以前怎麼做 -->
+          <h3>以前怎麼做</h3>
+          <p>追未付款的發票，就是對著試算表核對、一再寫同樣有禮的信，還得記住上次提醒過誰。</p>
+          <p>之前：手動核對、複製貼上。</p>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">02</span>
+        <div>
+          <!-- 待 Angela 審: 會建什麼 -->
+          <p class="kind">會建什麼</p>
+          <!-- 待 Angela 審: 這個流程 -->
+          <h3>這個流程</h3>
+          <ol>
+            <li>發票記在一份 Google 試算表：客戶、金額、到期日、狀態。</li>
+            <li><!-- 待 Angela 審: 自動 --><span class="kind">自動</span> Make 的情境依排程檢查試算表，找出逾期且未付款的列。</li>
+            <li><!-- 待 Angela 審: 自動 --><span class="kind">自動</span> 每一列產生一封個人化的 Gmail 草稿——不會自動寄出。</li>
+          </ol>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">03</span>
+        <div>
+          <!-- 待 Angela 審: 等你審閱 -->
+          <p class="status">等你審閱</p>
+          <!-- 待 Angela 審: 之後你怎麼用 -->
+          <h3>之後你怎麼用</h3>
+          <p>負責人審閱、必要時修改，再自行寄出。試算表會記下已經提醒過。</p>
+          <p>之後：草稿在收件匣等你，決定權仍在你手上。</p>
+        </div>
+      </li>
+    </ol>
     <p class="fallback"><a href="#notes">現場筆記</a></p>
   </div>
 </section>
@@ -245,24 +274,33 @@
     <p class="eyebrow">怎麼進行</p>
     <!-- 待 Angela 審: 我們怎麼一起做 -->
     <h2>我們怎麼一起做</h2>
-    <ol class="steps">
+    <ol class="rail">
       <li>
-        <!-- 待 Angela 審: 了解你現在的流程 -->
-        <h3>了解你現在的流程</h3>
-        <!-- 待 Angela 審 -->
-        <p>告訴我們什麼事佔掉了你的時間，以及現在怎麼做。</p>
+        <span class="rail-n">01</span>
+        <div>
+          <!-- 待 Angela 審: 了解你現在的流程 -->
+          <h3>了解你現在的流程</h3>
+          <!-- 待 Angela 審 -->
+          <p>告訴我們什麼事佔掉了你的時間，以及現在怎麼做。</p>
+        </div>
       </li>
       <li>
-        <!-- 待 Angela 審: 確認範圍 -->
-        <h3>確認範圍</h3>
-        <!-- 待 Angela 審 -->
-        <p>我們一起說好流程、誰來審，以及哪些內容絕不能自行寄出。</p>
+        <span class="rail-n">02</span>
+        <div>
+          <!-- 待 Angela 審: 確認範圍 -->
+          <h3>確認範圍</h3>
+          <!-- 待 Angela 審 -->
+          <p>我們一起說好流程、誰來審，以及哪些內容絕不能自行寄出。</p>
+        </div>
       </li>
       <li>
-        <!-- 待 Angela 審: 測試並交接 -->
-        <h3>測試並交接</h3>
-        <!-- 待 Angela 審 -->
-        <p>你先試草稿，之後自己操作這個流程。</p>
+        <span class="rail-n">03</span>
+        <div>
+          <!-- 待 Angela 審: 測試並交接 -->
+          <h3>測試並交接</h3>
+          <!-- 待 Angela 審 -->
+          <p>你先試草稿，之後自己操作這個流程。</p>
+        </div>
       </li>
     </ol>
   </div>
@@ -273,35 +311,41 @@
     <p class="eyebrow">現場筆記</p>
     <h2>我們正在做的事，用白話說清楚</h2>
     <p class="sub">來自真實小型企業流程的短文。</p>
-    <div class="grid3">
-      <article class="card">
-        <!-- 待 Angela 審: 流程筆記 -->
-        <span class="tag">流程筆記</span>
-        <h3>自動催款提醒，語氣仍然像你本人</h3>
-        <p class="result">草稿在收件匣等你，決定權仍在你手上。</p>
-        <p class="chain">Google 試算表 → Make → Gmail</p>
+    <div class="note-list">
+      <article>
+        <div>
+          <!-- 待 Angela 審: 流程筆記 -->
+          <p class="tag">流程筆記</p>
+          <h3>自動催款提醒，語氣仍然像你本人</h3>
+          <p class="result">草稿在收件匣等你，決定權仍在你手上。</p>
+          <p class="chain">Google 試算表 → Make → Gmail</p>
+        </div>
         <!-- 待 Angela 審: 看這個流程 -->
-        <p><a class="more" href="notes/payment-reminders/index.html">看這個流程 →</a></p>
+        <a class="more" href="notes/payment-reminders/index.html">看這個流程 →</a>
       </article>
-      <article class="card">
-        <!-- 待 Angela 審: 流程筆記 -->
-        <span class="tag">流程筆記</span>
-        <h3>更快回覆報價與服務詢問</h3>
-        <p class="result">草稿就緒，改一改就能寄出。</p>
-        <!-- 待 Angela 審: 試算表 → AI 草稿 -->
-        <p class="chain">試算表 → AI 草稿</p>
+      <article>
+        <div>
+          <!-- 待 Angela 審: 流程筆記 -->
+          <p class="tag">流程筆記</p>
+          <h3>更快回覆報價與服務詢問</h3>
+          <p class="result">草稿就緒，改一改就能寄出。</p>
+          <!-- 待 Angela 審: 試算表 → AI 草稿 -->
+          <p class="chain">試算表 → AI 草稿</p>
+        </div>
         <!-- 待 Angela 審: 看這個流程 -->
-        <p><a class="more" href="notes/inquiry-replies/index.html">看這個流程 →</a></p>
+        <a class="more" href="notes/inquiry-replies/index.html">看這個流程 →</a>
       </article>
-      <article class="card">
-        <!-- 待 Angela 審: 流程筆記 -->
-        <span class="tag">流程筆記</span>
-        <h3>在社群平台上找到潛在客戶</h3>
-        <p class="result">一份短而整齊、可以審閱的清單。</p>
-        <!-- 待 Angela 審: 已存搜尋 → AI 摘要 -->
-        <p class="chain">已存搜尋 → AI 摘要</p>
+      <article>
+        <div>
+          <!-- 待 Angela 審: 流程筆記 -->
+          <p class="tag">流程筆記</p>
+          <h3>在社群平台上找到潛在客戶</h3>
+          <p class="result">一份短而整齊、可以審閱的清單。</p>
+          <!-- 待 Angela 審: 已存搜尋 → AI 摘要 -->
+          <p class="chain">已存搜尋 → AI 摘要</p>
+        </div>
         <!-- 待 Angela 審: 看這個流程 -->
-        <p><a class="more" href="notes/lead-organizing/index.html">看這個流程 →</a></p>
+        <a class="more" href="notes/lead-organizing/index.html">看這個流程 →</a>
       </article>
     </div>
     <p class="section-cta">不想自己動手？<a href="#book">我們可以為你的公司建置。</a></p>

@@ -2,6 +2,13 @@
 
 ## 2026-11-12
 
+### Warm tool-like pass
+
+- Lighter page (`#F8F6F1`), warm-white panels (`#FFFDF9`), charcoal text (`#292722`), and secondary text (`#706A61`). Terracotta (`#A6472A`) is limited to actions. Sage status color is `#556352` (the suggested `#657861` was 4.41:1 on the page background, under WCAG AA). `#556352` is 5.90:1 on the page, 6.28:1 on a panel, and 5.33:1 on a 12% sage tint.
+- Services are open columns with vertical rules. The workflow and “how we work” steps sit on a thin line. Field notes are rows. The large beige bands are gone.
+- The hero example is a wider mail draft, labeled Example workflow, with sage status tags and a line down toward the services section.
+- Motion is a short draft open and a slight section fade. `prefers-reduced-motion` turns both off.
+
 ### Home page, from Angela's review
 
 - Hero now leads with payment reminders and inquiry replies only. The old “This page gathers…” summary is gone. The right side is a fictional payment-follow-up draft, not a field-note list.
