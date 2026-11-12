@@ -2,6 +2,16 @@
 
 ## 2026-11-12
 
+### Copy and structure
+
+- One solid booking button. “See an example” is an outline link.
+- The hero example is payment reminders only. The subhead describes drafts you review, edit, and send.
+- The consultation is a free 30-minute call. Build pricing and project length stay placeholders and stay out of FAQPage JSON-LD.
+- Services use the same four lines (who it's for, trigger, what you get, what you still control). Lead organizing sits under other workflows and does not include automated DMs or outreach.
+- How we work lists what you provide and what we deliver. About us names Angela and Sam only, with bios still pending.
+- The payment-reminder page is labeled a demo of Angela's own Make workflow: daily run, Gmail drafts only, status write-back, and the known limits.
+- Language control reads 中文｜English. Section spacing uses an 8px scale.
+
 ### Warm tool-like pass
 
 - Lighter page (`#F8F6F1`), warm-white panels (`#FFFDF9`), charcoal text (`#292722`), and secondary text (`#706A61`). Terracotta (`#A6472A`) is limited to actions. Sage status color is `#556352` (the suggested `#657861` was 4.41:1 on the page background, under WCAG AA). `#556352` is 5.90:1 on the page, 6.28:1 on a panel, and 5.33:1 on a 12% sage tint.

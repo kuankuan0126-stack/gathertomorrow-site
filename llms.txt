@@ -7,27 +7,29 @@ Contact: support@gathertomorrow.com
 ## English
 
 - [Home](https://kuankuan0126-stack.github.io/gathertomorrow-site/): overview
-- [Services](https://kuankuan0126-stack.github.io/gathertomorrow-site/#services): what can be automated first — payment reminders, inquiry replies, lead organizing
-- [Examples](https://kuankuan0126-stack.github.io/gathertomorrow-site/#examples): one payment-reminder workflow, with automatic steps and human review marked
+- [Services](https://kuankuan0126-stack.github.io/gathertomorrow-site/#services): payment reminders and inquiry replies; lead organizing is discussed separately and does not include automated messages or outreach
+- [Examples](https://kuankuan0126-stack.github.io/gathertomorrow-site/#examples): payment-reminder demo, with automatic steps and human review marked
 - [How it works](https://kuankuan0126-stack.github.io/gathertomorrow-site/#how): understand the current process, confirm scope, test and hand over
+- [About](https://kuankuan0126-stack.github.io/gathertomorrow-site/#about): Angela and Sam; bios not published yet
 - [Field notes](https://kuankuan0126-stack.github.io/gathertomorrow-site/#notes): short workflow notes
-- [Payment reminders note](https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/payment-reminders/): problem, tools, before and after
+- [Payment reminders note](https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/payment-reminders/): Angela's own demo workflow (sheet, daily Make run, Gmail draft only, status write-back)
 - [Inquiry replies note](https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/inquiry-replies/): problem, tools, before and after
 - [Lead organizing note](https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/lead-organizing/): problem, tools, before and after
 - [Tools](https://kuankuan0126-stack.github.io/gathertomorrow-site/tools/): consulting plans, then example tools that are in development and not for sale (prices TBD)
 - [FAQ](https://kuankuan0126-stack.github.io/gathertomorrow-site/#faq): who we help, coding, consultations, and services. Pricing and project length are not published yet.
-- [Book a consultation](https://kuankuan0126-stack.github.io/gathertomorrow-site/#book): after you send the form, we reply by email to set up a short call
+- [Book a consultation](https://kuankuan0126-stack.github.io/gathertomorrow-site/#book): a free 30-minute call to review one workflow, check feasibility, and discuss next steps
 
 ## 繁體中文
 
 - [首頁](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/): 總覽
-- [服務](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#services): 可以先自動化的三項——催款提醒、詢問回覆、名單整理
-- [例子](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#examples): 一個催款提醒流程，標出自動步驟與人工審核
+- [服務](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#services): 催款提醒與詢問回覆；名單整理另外討論，不包括自動傳訊或主動開發
+- [例子](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#examples): 催款提醒示範，標出自動步驟與需要人工審的步驟
 - [怎麼進行](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#how): 了解現在的流程、確認範圍、測試並交接
+- [關於我們](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#about): Angela 與 Sam；簡介尚未公布
 - [現場筆記](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#notes): 短的流程筆記
-- [催款提醒筆記](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/notes/payment-reminders/): 問題、工具與做法、之前與之後
+- [催款提醒筆記](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/notes/payment-reminders/): Angela 自己的示範流程（試算表、每天一次的 Make、只做 Gmail 草稿、狀態寫回）
 - [詢問回覆筆記](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/notes/inquiry-replies/): 問題、工具與做法、之前與之後
 - [名單整理筆記](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/notes/lead-organizing/): 問題、工具與做法、之前與之後
 - [工具](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/tools/): 諮詢方案在前；範例工具在「開發中」，尚未開賣，價格待定
 - [常見問題](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#faq): 協助對象、是否需要寫程式、諮詢方式與服務範圍。價格與專案時長尚未公布。
-- [預約諮詢](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#book): 送出之後，我們會用電子郵件回覆，約一通短談
+- [預約諮詢](https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#book): 免費 30 分鐘通話，一起看一個流程、評估可行性，並討論下一步
