@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-11-12
+
+### Home page, from Angela's review
+
+- Hero now leads with payment reminders and inquiry replies only. The old “This page gathers…” summary is gone. The right side is a fictional payment-follow-up draft, not a field-note list.
+- Home order is Services, one payment-reminder workflow, how we work together, field-note summaries, FAQ, and booking. Booking still says we reply by email to set up a short call.
+- Field notes on the home page are short cards (title, result, tool chain, “See the workflow”). The Problem / Tools & how / Before → After text lives on `notes/` pages, with Traditional Chinese copies under `zh/notes/`. Like buttons are gone. One service line sits under the whole notes section.
+- “Coming soon” teaser cards are off the home page. The tools pages lead with consulting and put example tools under “In development.”
+- Primary nav is Services, How it works, Examples, FAQ, and Book a consultation. Field notes sit in the footer. “Case studies” is renamed Examples. These are workflow demos, not client cases.
+- Ordinary link underlines are lighter. The filled terracotta buttons are Book a consultation and See an example.
+
 ## 2026-11-09
 
 ### Visual redesign

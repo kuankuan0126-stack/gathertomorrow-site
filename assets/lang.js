@@ -44,6 +44,12 @@
     var parts = String(pathname || "/").split("/").filter(Boolean);
     if (parts.length && parts[parts.length - 1].toLowerCase() === "index.html") parts.pop();
     var page = "home";
+    var slug = "";
+    if (parts.length >= 2 && parts[parts.length - 2] === "notes") {
+      slug = parts.pop();
+      parts.pop();
+      page = "note";
+    }
     if (parts.length && parts[parts.length - 1] === "tools") {
       page = "tools";
       parts.pop();
@@ -55,14 +61,15 @@
     }
     var root = "/" + parts.join("/");
     if (root.charAt(root.length - 1) !== "/") root += "/";
-    return { lang: lang, page: page, root: root };
+    return { lang: lang, page: page, root: root, slug: slug };
   }
 
-  function buildPath(rootPath, lang, page) {
+  function buildPath(rootPath, lang, page, slug) {
     var url = rootPath || "/";
     if (url.charAt(url.length - 1) !== "/") url += "/";
     if (lang === "zh") url += "zh/";
     if (page === "tools") url += "tools/";
+    if (page === "note" && slug) url += "notes/" + slug + "/";
     return url;
   }
 
@@ -134,7 +141,7 @@
   var here = parsePath(location.pathname);
   var want = preferredLang();
   if (want !== here.lang && !isBackForward()) {
-    var destPath = buildPath(here.root, want, here.page);
+    var destPath = buildPath(here.root, want, here.page, here.slug);
     // File URLs (raw previews, /index.html) must stay on a real file.
     // Directory hosts (GitHub Pages, Firebase, a local server) keep /zh/ and /tools/.
     if (/\.html$/i.test(location.pathname)) destPath += "index.html";
