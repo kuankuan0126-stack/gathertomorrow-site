@@ -3,10 +3,12 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F3EEE6">
 <script src="../assets/lang.js"></script>
 <title>Gather Tomorrow LLC — 為小型企業打造務實的 AI 自動化</title>
-<meta name="description" content="Gather Tomorrow 協助小型企業主與業務人員，用 AI 自動化節省催款、報價回覆與開發客戶的時間。">
+<!-- 待 Angela 審: meta description -->
+<meta name="description" content="我們依你已經在用的工具把流程設定好，讓逾期發票和新的詢問變成你可以審閱、修改、再寄出的草稿。">
 <link rel="canonical" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/">
 <link rel="alternate" hreflang="en" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/">
 <link rel="alternate" hreflang="zh-Hant" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/">
@@ -14,7 +16,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Gather Tomorrow LLC">
 <meta property="og:title" content="Gather Tomorrow LLC — 為小型企業打造務實的 AI 自動化">
-<meta property="og:description" content="Gather Tomorrow 協助小型企業主與業務人員，用 AI 自動化節省催款、報價回覆與開發客戶的時間。">
+<!-- 待 Angela 審: og:description -->
+<meta property="og:description" content="我們依你已經在用的工具把流程設定好，讓逾期發票和新的詢問變成你可以審閱、修改、再寄出的草稿。">
 <meta property="og:url" content="https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:locale:alternate" content="en_US">
@@ -49,126 +52,431 @@
       "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#webpage",
       "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/",
       "name": "Gather Tomorrow LLC — 為小型企業打造務實的 AI 自動化",
-      "description": "Gather Tomorrow 協助小型企業主與業務人員，用 AI 自動化節省催款、報價回覆與開發客戶的時間。",
+      "description": "我們依你已經在用的工具把流程設定好，讓逾期發票和新的詢問變成你可以審閱、修改、再寄出的草稿。",
       "inLanguage": "zh-Hant",
       "isPartOf": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#website"},
       "about": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#organization"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#faq",
+      "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#faq",
+      "inLanguage": "zh-Hant",
+      "isPartOf": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/#webpage"},
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "你們協助哪一種公司？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "美國與台灣的小型企業主與業務人員。實際的工作是催款、報價與開發客戶的 AI 自動化。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "我需要會寫程式嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不需要。我們用你已經在用的工具建立務實的自動化，你這邊不需要寫程式。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "諮詢怎麼進行？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "留下姓名、公司、電子郵件，以及你需要什麼協助。我們會用電子郵件回覆，約一通免費 30 分鐘通話，一起看一個流程、評估可行性，並討論下一步。也可以直接寫信到 support@gathertomorrow.com。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你們提供哪些服務？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "網站說明的是催款提醒與詢問回覆，用的是你已經在用的工具。名單整理是另外討論的項目，不包括自動傳訊或主動開發。現成工具範例尚未開賣。諮詢方案有單一流程、一組相連的流程，或客製建置。價格尚未定案。"
+          }
+        }
+      ]
     }
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+<!-- 待 Angela 審: 跳至內容 -->
+<a class="skip" href="#top">跳至內容</a>
 <header class="nav">
-  <div class="wrap nav-inner">
+  <div class="wrap nav-row">
     <a class="logo" href="#top">Gather<span>Tomorrow</span></a>
-    <nav aria-label="主要">
-      <a href="#notes">現場筆記</a>
-      <a href="tools/index.html">工具</a>
-      <a href="#cases">案例</a>
+    <nav class="nav-panel" id="site-nav" aria-label="主要">
+      <!-- 待 Angela 審: 服務 -->
+      <a href="#services">服務</a>
+      <!-- 待 Angela 審: 怎麼進行 -->
+      <a href="#how">怎麼進行</a>
+      <!-- 待 Angela 審: 例子 -->
+      <a href="#examples">例子</a>
+      <!-- 待 Angela 審: 常見問題 -->
+      <a href="#faq">常見問題</a>
       <a href="#book" class="btn btn-sm">預約諮詢</a>
-      <div class="lang-toggle" role="group" aria-label="語言">
-        <a class="lang-link" href="index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-current="true" aria-label="繁體中文">中</a><span aria-hidden="true">／</span><a class="lang-link" href="../index.html" lang="en" hreflang="en" data-set-lang="en" aria-label="English">EN</a>
-      </div>
     </nav>
+    <div class="nav-tools">
+      <div class="lang-toggle" role="group" aria-label="語言">
+        <a class="lang-link" href="index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-current="true" aria-label="繁體中文">中文</a><span aria-hidden="true">｜</span><a class="lang-link" href="../index.html" lang="en" hreflang="en" data-set-lang="en" aria-label="English">English</a>
+      </div>
+      <label class="nav-toggle">
+        <!-- 待 Angela 審: 選單 -->
+        <span class="visually-hidden">選單</span>
+        <input class="nav-check" type="checkbox" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </label>
+    </div>
   </div>
 </header>
 
 <main id="top">
 <section class="hero">
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <span class="mark" aria-hidden="true"></span>
+      <!-- 待 Angela 審: 眉題 -->
+      <p class="eyebrow">小型企業的 AI 自動化</p>
+      <!-- 待 Angela 審: 主標 -->
+      <h1>少一點追趕。更快回覆。把時間留給你的事業。</h1>
+      <!-- 待 Angela 審: 首段 -->
+      <p class="page-summary">我們依你已經在用的工具把流程設定好，讓逾期發票和新的詢問變成你可以審閱、修改、再寄出的草稿。</p>
+      <div class="cta-row">
+        <a href="#book" class="btn">預約諮詢</a>
+        <!-- 待 Angela 審: 看一個例子 -->
+        <a href="#examples" class="btn btn-ghost">看一個例子 →</a>
+      </div>
+      <!-- 待 Angela 審: 免費 30 分鐘通話 -->
+      <p class="fine">免費 30 分鐘通話，一起看一個流程、評估可行性，並討論下一步。</p>
+      <p class="fine">你這邊不需要寫程式。</p>
+    </div>
+    <aside class="demo-card" aria-label="虛構的範例流程">
+      <div class="demo-top">
+        <p class="demo-label">
+          <svg class="ico" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><rect x="1.75" y="3.25" width="12.5" height="9.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1"/><path d="M2 4.2 8 8.4 14 4.2" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+          <!-- 待 Angela 審: 範例流程 -->
+          範例流程
+        </p>
+        <!-- 待 Angela 審: 等你審閱 -->
+        <p class="status">等你審閱</p>
+      </div>
+      <ol class="mini-rail">
+        <!-- 待 Angela 審: 逾期發票 -->
+        <li>逾期發票</li>
+        <!-- 待 Angela 審: 提醒草稿 -->
+        <li>提醒草稿</li>
+        <!-- 待 Angela 審: 你來審 -->
+        <li>你來審</li>
+      </ol>
+      <div class="draft">
+        <dl class="mail">
+          <div><dt><!-- 待 Angela 審: 寄件者 -->寄件者</dt><dd>Gather Tomorrow</dd></div>
+          <div><dt><!-- 待 Angela 審: 收件者 -->收件者</dt><dd>Alex</dd></div>
+          <div><dt><!-- 待 Angela 審: 主旨 -->主旨</dt><dd><!-- 待 Angela 審: 發票 #1042 -->發票 #1042</dd></div>
+        </dl>
+        <!-- 待 Angela 審: 虛構信例 -->
+        <p>Alex 你好，溫和提醒一下，發票 #1042…</p>
+        <!-- 待 Angela 審: 草稿就緒 -->
+        <p class="status">草稿就緒</p>
+      </div>
+    </aside>
+  </div>
+  <div class="wrap connector" aria-hidden="true"><span></span></div>
+</section>
+
+<section id="services" class="section">
   <div class="wrap">
-    <p class="eyebrow">AI 自動化 · 服務小型企業</p>
-    <h1>少把時間耗在繁瑣工作上。<br><span class="accent">讓 AI 處理後續追蹤。</span></h1>
-    <p class="lead">我們協助小型企業主與業務人員，用你已經在用的工具，建立務實的 AI 自動化——催款提醒、更快的報價回覆、找出潛在客戶。你這邊不需要寫程式。</p>
-    <div class="cta-row">
-      <a href="#book" class="btn">預約諮詢</a>
-      <a href="#notes" class="btn btn-ghost">閱讀現場筆記</a>
+    <!-- 待 Angela 審: 服務 -->
+    <p class="eyebrow">服務</p>
+    <!-- 待 Angela 審: 可以先自動化什麼 -->
+    <h2>可以先自動化什麼？</h2>
+    <div class="rules rules-2">
+      <article>
+        <h3>催款提醒</h3>
+        <dl class="svc">
+          <!-- 待 Angela 審: 適合誰 -->
+          <dt>適合誰</dt>
+          <!-- 待 Angela 審 -->
+          <dd>用試算表追未付款發票的小型企業主。</dd>
+          <!-- 待 Angela 審: 觸發 -->
+          <dt>觸發</dt>
+          <!-- 待 Angela 審 -->
+          <dd>未付款的發票到了到期日。</dd>
+          <!-- 待 Angela 審: 你會得到 -->
+          <dt>你會得到</dt>
+          <!-- 待 Angela 審 -->
+          <dd>一封催款的 Gmail 草稿。不會自動寄出。</dd>
+          <!-- 待 Angela 審: 你仍掌握 -->
+          <dt>你仍掌握</dt>
+          <!-- 待 Angela 審: 在 Gmail 審閱提醒草稿 -->
+          <dd>在 Gmail 審閱提醒草稿，需要的話修改，再自行寄出。</dd>
+        </dl>
+        <!-- 待 Angela 審: 看例子 -->
+        <a class="more" href="notes/payment-reminders/index.html">看例子 →</a>
+      </article>
+      <article>
+        <!-- 待 Angela 審: 詢問回覆 -->
+        <h3>詢問回覆</h3>
+        <dl class="svc">
+          <dt>適合誰</dt>
+          <!-- 待 Angela 審 -->
+          <dd>會從電子郵件或網站表單收到報價與服務詢問的負責人與業務人員。</dd>
+          <dt>觸發</dt>
+          <!-- 待 Angela 審 -->
+          <dd>新的詢問進來。</dd>
+          <dt>你會得到</dt>
+          <!-- 待 Angela 審 -->
+          <dd>依照你的價格筆記與常見問答草擬的第一封回覆。</dd>
+          <dt>你仍掌握</dt>
+          <!-- 待 Angela 審 -->
+          <dd>你審閱草稿、修改，再自己寄出。</dd>
+        </dl>
+        <!-- 待 Angela 審: 看例子 -->
+        <a class="more" href="notes/inquiry-replies/index.html">看例子 →</a>
+      </article>
+    </div>
+    <aside class="other">
+      <!-- 待 Angela 審: 其他可以討論的流程 -->
+      <h3>其他可以討論的流程</h3>
+      <!-- 待 Angela 審: 名單整理說明 -->
+      <p><strong>名單整理。</strong> 合適的潛在客戶每天都在社群上發文，但一直滑著找，會吃掉好幾個小時。已儲存的搜尋和摘要可以把相關貼文收成一份短名單。要聯絡誰，由你決定。</p>
+      <!-- 待 Angela 審: 不包括自動私訊 -->
+      <p>這不包括自動私訊，也不包括主動開發。</p>
+      <!-- 待 Angela 審: 看例子 -->
+      <a class="more" href="notes/lead-organizing/index.html">看例子 →</a>
+    </aside>
+  </div>
+</section>
+
+<section id="examples" class="section alt">
+  <div class="wrap">
+    <!-- 待 Angela 審: 例子 -->
+    <p class="eyebrow">例子</p>
+    <h2>催款提醒自動化</h2>
+    <!-- 待 Angela 審: 流程導言 -->
+    <p class="sub">一個處理逾期發票的流程。不會自動寄出。</p>
+    <ol class="rail">
+      <li>
+        <span class="rail-n">01</span>
+        <div>
+          <!-- 待 Angela 審: 需要你審 -->
+          <p class="step-tag step-you">需要你審</p>
+          <!-- 待 Angela 審: 以前怎麼做 -->
+          <h3>以前怎麼做</h3>
+          <p>追未付款的發票，就是對著試算表核對、一再寫同樣有禮的信，還得記住上次提醒過誰。</p>
+          <p>之前：手動核對、複製貼上。</p>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">02</span>
+        <div>
+          <!-- 待 Angela 審: 自動 -->
+          <p class="step-tag step-auto">自動</p>
+          <!-- 待 Angela 審: 這個流程 -->
+          <h3>這個流程</h3>
+          <ol>
+            <li>發票記在一份 Google 試算表：客戶、金額、到期日，以及是否已付款。</li>
+            <!-- 待 Angela 審 -->
+            <li>排程執行時讀取試算表，並略過已標成已付款的發票。</li>
+            <li>只產生一封個人化的 Gmail 草稿。不會寄出。</li>
+          </ol>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">03</span>
+        <div>
+          <!-- 待 Angela 審: 需要你審 -->
+          <p class="step-tag step-you">需要你審</p>
+          <!-- 待 Angela 審: 之後你怎麼用 -->
+          <h3>之後你怎麼用</h3>
+          <!-- 待 Angela 審: 在 Gmail 審閱提醒草稿 -->
+          <p>在 Gmail 審閱提醒草稿，需要的話修改，再自行寄出。</p>
+          <!-- 待 Angela 審: 記下的是草稿準備時間 -->
+          <p>試算表記下的是草稿準備好的時間，不是你寄出的時間。<a href="notes/payment-reminders/index.html">看這個示範流程</a>。</p>
+        </div>
+      </li>
+    </ol>
+    <p class="fallback"><a href="#notes">現場筆記</a></p>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <div class="wrap">
+    <!-- 待 Angela 審: 怎麼進行 -->
+    <p class="eyebrow">怎麼進行</p>
+    <!-- 待 Angela 審: 我們怎麼一起做 -->
+    <h2>我們怎麼一起做</h2>
+    <ol class="rail">
+      <li>
+        <span class="rail-n">01</span>
+        <div>
+          <!-- 待 Angela 審: 了解你現在的流程 -->
+          <h3>了解你現在的流程</h3>
+          <dl class="svc">
+            <!-- 待 Angela 審: 你提供 -->
+            <dt>你提供</dt>
+            <!-- 待 Angela 審 -->
+            <dd>什麼事佔掉了你的時間，以及現在怎麼做。</dd>
+            <!-- 待 Angela 審: 我們交付 -->
+            <dt>我們交付</dt>
+            <!-- 待 Angela 審 -->
+            <dd>一份雙方都認的流程描述，讓下一步從同一張圖開始。</dd>
+          </dl>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">02</span>
+        <div>
+          <!-- 待 Angela 審: 確認範圍 -->
+          <h3>確認範圍</h3>
+          <dl class="svc">
+            <dt>你提供</dt>
+            <!-- 待 Angela 審 -->
+            <dd>你要哪些觸發條件、誰來審，以及哪些事不能自己跑。</dd>
+            <dt>我們交付</dt>
+            <!-- 待 Angela 審 -->
+            <dd>確認後的範圍：觸發條件、交付內容、誰來審、費用與第三方成本（跟你討論，不列在這個網站上），以及哪些不會自動執行。</dd>
+          </dl>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">03</span>
+        <div>
+          <!-- 待 Angela 審: 測試並交接 -->
+          <h3>測試並交接</h3>
+          <dl class="svc">
+            <dt>你提供</dt>
+            <!-- 待 Angela 審 -->
+            <dd>用來測試的資料。</dd>
+            <dt>我們交付</dt>
+            <!-- 待 Angela 審 -->
+            <dd>用那些測試資料驗證過的流程、一份操作說明，以及怎麼把它關掉。</dd>
+          </dl>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap">
+    <!-- 待 Angela 審: 關於我們 -->
+    <p class="eyebrow">關於我們</p>
+    <!-- 待 Angela 審: 關於我們 -->
+    <h2>關於我們</h2>
+    <div class="rules rules-2">
+      <article>
+        <h3>Angela</h3>
+        <p class="pending-bio">待 Angela 提供</p>
+      </article>
+      <article>
+        <h3>Sam</h3>
+        <p class="pending-bio">待 Angela 提供</p>
+      </article>
     </div>
   </div>
 </section>
 
-<section id="notes" class="section">
+<section id="notes" class="section alt">
   <div class="wrap">
     <p class="eyebrow">現場筆記</p>
     <h2>我們正在做的事，用白話說清楚</h2>
-    <p class="sub">來自真實小型企業流程的短文。格式是：問題 → 工具與做法 → 之前與之後。完整文章即將推出。</p>
-    <div class="grid3">
-      <article class="card">
-        <span class="tag">即將推出 · 草稿摘錄</span>
-        <h3>自動催款提醒，語氣仍然像你本人</h3>
-        <dl>
-          <dt>問題</dt><dd>追未付款的發票，就是對著試算表核對、一再寫同樣有禮的信，還得記住上次提醒過誰。</dd>
-          <dt>工具與做法</dt><dd>Make 監看一份記錄發票的 Google 試算表。到期日一過，就準備一封 Gmail「草稿」提醒——由你檢查後再按寄出。</dd>
-          <dt>之前 → 之後</dt><dd>之前：手動核對、複製貼上。之後：草稿在收件匣等你，決定權仍在你手上。</dd>
-        </dl>
-        <div class="card-foot">
-          <button class="like" type="button" aria-pressed="false" title="喜歡功能即將推出">♡ 喜歡</button>
-          <a href="#book" class="diy">不想自己動手？我們可以為你的公司建置。→</a>
+    <p class="sub">來自真實小型企業流程的短文。</p>
+    <div class="note-list">
+      <article>
+        <div>
+          <!-- 待 Angela 審: 流程筆記 -->
+          <p class="tag">流程筆記</p>
+          <h3>自動催款提醒，語氣仍然像你本人</h3>
+          <!-- 待 Angela 審: 在 Gmail 審閱提醒草稿 -->
+          <p class="result">在 Gmail 審閱提醒草稿，需要的話修改，再自行寄出。</p>
+          <p class="chain">Google 試算表 → Make → Gmail</p>
         </div>
+        <!-- 待 Angela 審: 看這個流程 -->
+        <a class="more" href="notes/payment-reminders/index.html">看這個流程 →</a>
       </article>
-      <article class="card">
-        <span class="tag">即將推出 · 草稿摘錄</span>
-        <h3>更快回覆報價與服務詢問</h3>
-        <dl>
-          <dt>問題</dt><dd>詢問從電子郵件和網站表單進來，你正忙的時候，回得慢就可能失去這筆生意。</dd>
-          <dt>工具與做法</dt><dd>新的詢問會記到試算表，AI 助理再依照你的價格筆記與常見問答草擬第一封回覆——供你審閱。</dd>
-          <dt>之前 → 之後</dt><dd>之前：每封回覆都從零開始寫。之後：草稿就緒，改一改就能寄出。</dd>
-        </dl>
-        <div class="card-foot">
-          <button class="like" type="button" aria-pressed="false" title="喜歡功能即將推出">♡ 喜歡</button>
-          <a href="#book" class="diy">不想自己動手？我們可以為你的公司建置。→</a>
+      <article>
+        <div>
+          <!-- 待 Angela 審: 流程筆記 -->
+          <p class="tag">流程筆記</p>
+          <h3>更快回覆報價與服務詢問</h3>
+          <p class="result">草稿就緒，改一改就能寄出。</p>
+          <!-- 待 Angela 審: 試算表 → AI 草稿 -->
+          <p class="chain">試算表 → AI 草稿</p>
         </div>
+        <!-- 待 Angela 審: 看這個流程 -->
+        <a class="more" href="notes/inquiry-replies/index.html">看這個流程 →</a>
       </article>
-      <article class="card">
-        <span class="tag">即將推出 · 草稿摘錄</span>
-        <h3>在社群平台上找到潛在客戶</h3>
-        <dl>
-          <dt>問題</dt><dd>合適的潛在客戶每天都在社群上發文，但一直滑著找，會吃掉好幾個小時。</dd>
-          <dt>工具與做法</dt><dd>已儲存的搜尋加上 AI 摘要，把相關貼文收成一份清單，並為每一則建議下一步——由你決定要聯絡誰。</dd>
-          <dt>之前 → 之後</dt><dd>之前：漫無目的地滑。之後：一份短而整齊、可以審閱的清單。</dd>
-        </dl>
-        <div class="card-foot">
-          <button class="like" type="button" aria-pressed="false" title="喜歡功能即將推出">♡ 喜歡</button>
-          <a href="#book" class="diy">不想自己動手？我們可以為你的公司建置。→</a>
+      <article>
+        <div>
+          <!-- 待 Angela 審: 流程筆記 -->
+          <p class="tag">流程筆記</p>
+          <h3>在社群平台上找到潛在客戶</h3>
+          <p class="result">一份短而整齊、可以審閱的清單。</p>
+          <!-- 待 Angela 審: 已存搜尋 → AI 摘要 -->
+          <p class="chain">已存搜尋 → AI 摘要</p>
         </div>
+        <!-- 待 Angela 審: 看這個流程 -->
+        <a class="more" href="notes/lead-organizing/index.html">看這個流程 →</a>
       </article>
     </div>
+    <p class="section-cta">不想自己動手？<a href="#book">我們可以為你的公司建置。</a></p>
   </div>
 </section>
 
-<section id="tools" class="section alt">
-  <div class="wrap">
-    <p class="eyebrow">小工具</p>
-    <h2>可以先試的小型 AI 工具</h2>
-    <p class="sub">這些試用工具還在撰寫。現成工具與諮詢方案請看<a href="tools/index.html">工具頁</a>。</p>
-    <div class="grid3">
-      <div class="card tool"><span class="tag">即將推出</span><h3>催款信產生器</h3><p>把發票資料寫成一封友善、專業的催款信。</p></div>
-      <div class="card tool"><span class="tag">即將推出</span><h3>報價回覆幫手</h3><p>貼上客戶的詢問，取得一封清楚的初稿回覆。</p></div>
-      <div class="card tool"><span class="tag">即將推出</span><h3>自動化點子掃描</h3><p>描述你的一週，看看哪些工作適合先自動化。</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="cases" class="section">
-  <div class="wrap">
-    <p class="eyebrow">案例研究</p>
-    <h2>實際怎麼運作</h2>
-    <div class="grid2">
-      <article class="card case">
-        <span class="tag">案例</span>
-        <h3>催款提醒自動化</h3>
-        <ol>
-          <li>發票記在一份 Google 試算表：客戶、金額、到期日、狀態。</li>
-          <li>Make 的情境依排程檢查試算表，找出逾期且未付款的列。</li>
-          <li>每一列產生一封個人化的 Gmail 草稿——不會自動寄出。</li>
-          <li>負責人審閱、必要時修改，再自行寄出。試算表會記下已經提醒過。</li>
-        </ol>
+<!-- FAQPage JSON-LD lists only questions with published answers.
+     Pricing and project length are visible placeholders and are left out of the schema. -->
+<section id="faq" class="section">
+  <div class="wrap narrow">
+    <!-- 待 Angela 審: 常見問題（眉題） -->
+    <p class="eyebrow">常見問題</p>
+    <!-- 待 Angela 審: 常見問題（標題） -->
+    <h2>常見問題</h2>
+    <!-- 待 Angela 審: 常見問題導言 -->
+    <p class="sub">以下是這個網站已經寫明的簡短回答。價格與專案要多久，目前尚未公布。</p>
+    <div class="faq-list">
+      <article class="faq-item">
+        <!-- 待 Angela 審 -->
+        <h3>你們協助哪一種公司？</h3>
+        <!-- 待 Angela 審 -->
+        <p>美國與台灣的小型企業主與業務人員。實際的工作是催款、報價與開發客戶的 AI 自動化。</p>
       </article>
-      <article class="card case muted">
-        <span class="tag">即將推出</span>
-        <h3>下一個案例</h3>
-        <p>我們正在整理另一個小型企業自動化案例，請稍後再來看。</p>
+      <article class="faq-item">
+        <!-- 待 Angela 審 -->
+        <h3>我需要會寫程式嗎？</h3>
+        <!-- 待 Angela 審 -->
+        <p>不需要。我們用你已經在用的工具建立務實的自動化，你這邊不需要寫程式。</p>
+      </article>
+      <article class="faq-item">
+        <!-- 待 Angela 審 -->
+        <h3>諮詢怎麼進行？</h3>
+        <!-- 待 Angela 審 -->
+        <!-- 待 Angela 審: 諮詢怎麼進行，含免費通話 -->
+        <p>留下姓名、公司、電子郵件，以及你需要什麼協助。我們會用電子郵件回覆，約一通免費 30 分鐘通話，一起看一個流程、評估可行性，並討論下一步。也可以直接寫信到 support@gathertomorrow.com。</p>
+      </article>
+      <article class="faq-item">
+        <!-- 待 Angela 審: 問題句。答案是指定的占位，不是譯文。 -->
+        <h3>費用是多少？</h3>
+        <p class="faq-pending">待 Angela 定</p>
+      </article>
+      <article class="faq-item">
+        <!-- 待 Angela 審 -->
+        <h3>你們提供哪些服務？</h3>
+        <!-- 待 Angela 審 -->
+        <!-- 待 Angela 審 -->
+        <p>網站說明的是催款提醒與詢問回覆，用的是你已經在用的工具。名單整理是另外討論的項目，不包括自動傳訊或主動開發。現成工具範例尚未開賣。諮詢方案有單一流程、一組相連的流程，或客製建置。價格尚未定案。</p>
+      </article>
+      <article class="faq-item">
+        <!-- 待 Angela 審: 問題句。答案是指定的占位，不是譯文。 -->
+        <h3>一個專案要花多久？</h3>
+        <p class="faq-pending">待 Angela 定</p>
       </article>
     </div>
   </div>
@@ -178,7 +486,9 @@
   <div class="wrap narrow">
     <p class="eyebrow">預約諮詢</p>
     <h2>告訴我們，什麼事佔掉了你的時間</h2>
-    <p class="sub">我們會用電子郵件回覆，約一通短談。</p>
+    <!-- 待 Angela 審: 送出之後 -->
+    <!-- 待 Angela 審: 免費 30 分鐘通話 -->
+    <p class="sub">免費 30 分鐘通話，一起看一個流程、評估可行性，並討論下一步。我們會用電子郵件回覆來約時間。</p>
 
     <!-- ============================================================
          TALLY 表單嵌入放這裡
@@ -186,9 +496,9 @@
          用 Tally 的嵌入碼換掉下面整段 <form>。
          ============================================================ -->
     <form class="form" action="mailto:support@gathertomorrow.com" method="post" enctype="text/plain">
-      <label>姓名<input name="name" required></label>
-      <label>公司<input name="company"></label>
-      <label>電子郵件<input type="email" name="email" required></label>
+      <label>姓名<input name="name" autocomplete="name" required></label>
+      <label>公司<input name="company" autocomplete="organization"></label>
+      <label>電子郵件<input type="email" name="email" autocomplete="email" required></label>
       <label>你需要什麼協助？<textarea name="message" rows="4"></textarea></label>
       <button class="btn" type="submit">送出</button>
     </form>
@@ -197,6 +507,26 @@
 </section>
 </main>
 
-<footer class="footer"><div class="wrap">© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></div></footer>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <!-- 待 Angela 審: 頁尾 -->
+    <nav aria-label="頁尾">
+      <!-- 待 Angela 審: 服務 -->
+      <a href="#services">服務</a>
+      <!-- 待 Angela 審: 怎麼進行 -->
+      <a href="#how">怎麼進行</a>
+      <!-- 待 Angela 審: 例子 -->
+      <a href="#examples">例子</a>
+      <!-- 待 Angela 審: 關於我們 -->
+      <a href="#about">關於我們</a>
+      <a href="#notes">現場筆記</a>
+      <a href="tools/index.html">工具</a>
+      <a href="#faq">常見問題</a>
+      <a href="#book">預約諮詢</a>
+    </nav>
+    <p>© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></p>
+  </div>
+</footer>
+<script src="../assets/nav.js"></script>
 </body>
 </html>

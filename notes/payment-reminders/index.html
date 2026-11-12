@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- English demo workflow. Traditional Chinese: /zh/notes/payment-reminders/ -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F8F6F1">
+<script src="../../assets/lang.js"></script>
+<title>Demo workflow: Payment reminders — Gather Tomorrow LLC</title>
+<meta name="description" content="Angela's own payment-reminder workflow. It prepares a Gmail draft from an invoice sheet once a day. It never sends, and it never marks an invoice paid.">
+<link rel="canonical" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/payment-reminders/">
+<link rel="alternate" hreflang="en" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/payment-reminders/">
+<link rel="alternate" hreflang="zh-Hant" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/notes/payment-reminders/">
+<link rel="alternate" hreflang="x-default" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/payment-reminders/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gather Tomorrow LLC">
+<meta property="og:title" content="Demo workflow: Payment reminders — Gather Tomorrow LLC">
+<meta property="og:description" content="Angela's own payment-reminder workflow. It prepares a Gmail draft from an invoice sheet once a day. It never sends, and it never marks an invoice paid.">
+<meta property="og:url" content="https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/payment-reminders/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/payment-reminders/#webpage",
+  "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/notes/payment-reminders/",
+  "name": "Demo workflow: Payment reminders — Gather Tomorrow LLC",
+  "description": "Angela's own payment-reminder workflow. It prepares a Gmail draft from an invoice sheet once a day. It never sends, and it never marks an invoice paid.",
+  "inLanguage": "en",
+  "isPartOf": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#website"}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="logo" href="../../index.html">Gather<span>Tomorrow</span></a>
+    <nav class="nav-panel" id="site-nav" aria-label="Primary">
+      <a href="../../index.html#services">Services</a>
+      <a href="../../index.html#how">How it works</a>
+      <a href="../../index.html#examples">Examples</a>
+      <a href="../../index.html#faq">FAQ</a>
+      <a href="../../index.html#book" class="btn btn-sm">Book a consultation</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <a class="lang-link" href="../../zh/notes/payment-reminders/index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-label="繁體中文">中文</a><span aria-hidden="true">｜</span><a class="lang-link" href="index.html" lang="en" hreflang="en" data-set-lang="en" aria-current="true" aria-label="English">English</a>
+      </div>
+      <label class="nav-toggle">
+        <span class="visually-hidden">Menu</span>
+        <input class="nav-check" type="checkbox" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </label>
+    </div>
+  </div>
+</header>
+<main id="top">
+<section class="hero hero-compact">
+  <div class="wrap narrow">
+    <span class="mark" aria-hidden="true"></span>
+    <p class="eyebrow">Demo workflow</p>
+    <h1>Payment reminders</h1>
+    <p class="page-summary">This is Angela's own workflow, not a client case. Once a day it reads an invoice sheet and prepares a Gmail draft. It never sends, and it never marks an invoice paid.</p>
+    <p class="chain">Google Sheets → Make → Gmail</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap narrow">
+    <article class="demo-steps">
+      <h2>Inputs</h2>
+      <p class="step-tag step-you">Needs your review</p>
+      <p>You keep one invoice-tracking Google Sheet. You mark an invoice Paid yourself. The automation never marks an invoice paid.</p>
+      <p>It fits when that sheet has consistent dates, a paid-status column, and a customer email for each person you want to remind.</p>
+
+      <h2>What the system does</h2>
+      <p class="step-tag step-auto">Automatic</p>
+      <ul>
+        <li>It runs once a day on a schedule, in the evening, and reads the sheet.</li>
+        <li>It skips rows already marked Paid.</li>
+        <li>It chooses a stage from the days since the invoice: a request on day 0, a gentle reminder in the early window, a final reminder before the grace period ends, then weekly reminders after it is overdue. If a stage was missed, it catches up while that window is still open.</li>
+        <li>It never creates a second draft on the same day. It prepares only one reminder for each stage, comparing the last-reminder date with the start of that stage. After the invoice is overdue, it prepares another reminder only when 7 or more days have passed since the last reminder.</li>
+        <li>If a customer has no email on file, it creates no draft and writes nothing. It tries again the next day.</li>
+        <li>It creates a Gmail draft only. It never sends the message.</li>
+      </ul>
+
+      <h2>Human review</h2>
+      <p class="step-tag step-you">Needs your review</p>
+      <p>Review reminder drafts in Gmail, edit if needed, then send. Sending stays manual.</p>
+
+      <h2>Status write-back</h2>
+      <p class="step-tag step-auto">Automatic</p>
+      <p>In the same run, right after the draft is created, it writes the last reminder date and a reminder count back to the sheet.</p>
+      <p class="step-tag step-you">Needs your review</p>
+      <p>That records when the draft was prepared, not when you sent it. If you delete a draft without sending it, the sheet still shows a reminder as prepared. You correct the sheet yourself.</p>
+
+      <h2>If something fails</h2>
+      <p class="step-tag step-you">Needs your review</p>
+      <p>There is no custom error route. Failures rely on Make's built-in error email to the account owner, and you check the run history.</p>
+      <p>Known limit: if the draft is created but the write-back fails, a duplicate draft may appear the next day. You delete the extra draft.</p>
+
+      <h2>Where it fits</h2>
+      <p>It works when invoices live in one sheet with consistent dates and a paid-status column, and you have a customer email list.</p>
+      <p>It is not for automatic sending, payment collection, or bank reconciliation.</p>
+    </article>
+    <p class="section-cta"><a class="btn" href="../../index.html#book">Discuss a similar workflow</a></p>
+    <p class="back"><a href="../../index.html#notes">Field notes</a></p>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <nav aria-label="Footer">
+      <a href="../../index.html#services">Services</a>
+      <a href="../../index.html#how">How it works</a>
+      <a href="../../index.html#examples">Examples</a>
+      <a href="../../index.html#about">About</a>
+      <a href="../../index.html#notes">Field notes</a>
+      <a href="../../tools/index.html">Tools</a>
+      <a href="../../index.html#faq">FAQ</a>
+      <a href="../../index.html#book">Book a consultation</a>
+    </nav>
+    <p>© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></p>
+  </div>
+</footer>
+<script src="../../assets/nav.js"></script>
+</body>
+</html>

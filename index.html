@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F3EEE6">
 <script src="assets/lang.js"></script>
 <title>Gather Tomorrow LLC — Practical AI Automation for Small Businesses</title>
-<meta name="description" content="Gather Tomorrow helps small-business owners and salespeople use AI automation to save time on follow-ups, quotes, and lead finding.">
+<meta name="description" content="We set up workflows around the tools you already use, so overdue invoices and new inquiries become drafts you can review, edit, and send.">
 <link rel="canonical" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/">
 <link rel="alternate" hreflang="en" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/">
 <link rel="alternate" hreflang="zh-Hant" href="https://kuankuan0126-stack.github.io/gathertomorrow-site/zh/">
@@ -14,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Gather Tomorrow LLC">
 <meta property="og:title" content="Gather Tomorrow LLC — Practical AI Automation for Small Businesses">
-<meta property="og:description" content="Gather Tomorrow helps small-business owners and salespeople use AI automation to save time on follow-ups, quotes, and lead finding.">
+<meta property="og:description" content="We set up workflows around the tools you already use, so overdue invoices and new inquiries become drafts you can review, edit, and send.">
 <meta property="og:url" content="https://kuankuan0126-stack.github.io/gathertomorrow-site/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="zh_TW">
@@ -49,126 +50,342 @@
       "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#webpage",
       "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/",
       "name": "Gather Tomorrow LLC — Practical AI Automation for Small Businesses",
-      "description": "Gather Tomorrow helps small-business owners and salespeople use AI automation to save time on follow-ups, quotes, and lead finding.",
+      "description": "We set up workflows around the tools you already use, so overdue invoices and new inquiries become drafts you can review, edit, and send.",
       "inLanguage": "en",
       "isPartOf": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#website"},
       "about": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#organization"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#faq",
+      "url": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#faq",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://kuankuan0126-stack.github.io/gathertomorrow-site/#webpage"},
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of companies do you help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Small-business owners and salespeople in the United States and Taiwan. The practical work is AI automation for follow-ups, quotes, and finding leads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to know how to code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We set up practical automations using tools you already have. No coding is required on your side."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a consultation work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send your name, company, email, and what you need help with. We'll reply by email to set up a free 30-minute call to review one workflow, check feasibility, and discuss next steps. You can also write to support@gathertomorrow.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services do you offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The site describes payment reminders and inquiry replies, using tools you already have. Lead organizing is separate and does not include automated messages or outreach. Example ready-made tools are not for sale yet. Consulting plans are one workflow, a connected set, or a custom build. Prices are not set."
+          }
+        }
+      ]
     }
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header class="nav">
-  <div class="wrap nav-inner">
+  <div class="wrap nav-row">
     <a class="logo" href="#top">Gather<span>Tomorrow</span></a>
-    <nav aria-label="Primary">
-      <a href="#notes">Field Notes</a>
-      <a href="tools/index.html">Tools</a>
-      <a href="#cases">Case Studies</a>
+    <nav class="nav-panel" id="site-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#examples">Examples</a>
+      <a href="#faq">FAQ</a>
       <a href="#book" class="btn btn-sm">Book a consultation</a>
-      <div class="lang-toggle" role="group" aria-label="Language">
-        <a class="lang-link" href="zh/index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-label="繁體中文">中</a><span aria-hidden="true">／</span><a class="lang-link" href="index.html" lang="en" hreflang="en" data-set-lang="en" aria-current="true" aria-label="English">EN</a>
-      </div>
     </nav>
+    <div class="nav-tools">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <a class="lang-link" href="zh/index.html" lang="zh-Hant" hreflang="zh-Hant" data-set-lang="zh" aria-label="繁體中文">中文</a><span aria-hidden="true">｜</span><a class="lang-link" href="index.html" lang="en" hreflang="en" data-set-lang="en" aria-current="true" aria-label="English">English</a>
+      </div>
+      <label class="nav-toggle">
+        <span class="visually-hidden">Menu</span>
+        <input class="nav-check" type="checkbox" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </label>
+    </div>
   </div>
 </header>
 
 <main id="top">
 <section class="hero">
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <span class="mark" aria-hidden="true"></span>
+      <p class="eyebrow">AI automation for small businesses</p>
+      <h1>Less chasing. Faster replies. More time for your business.</h1>
+      <p class="page-summary">We set up workflows around the tools you already use, so overdue invoices and new inquiries become drafts you can review, edit, and send.</p>
+      <div class="cta-row">
+        <a href="#book" class="btn">Book a consultation</a>
+        <a href="#examples" class="btn btn-ghost">See an example →</a>
+      </div>
+      <p class="fine">A free 30-minute call to review one workflow, check feasibility, and discuss next steps.</p>
+      <p class="fine">No coding required on your side</p>
+    </div>
+    <aside class="demo-card" aria-label="Fictional example workflow">
+      <div class="demo-top">
+        <p class="demo-label">
+          <svg class="ico" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><rect x="1.75" y="3.25" width="12.5" height="9.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1"/><path d="M2 4.2 8 8.4 14 4.2" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+          Example workflow
+        </p>
+        <p class="status">Waiting for your review</p>
+      </div>
+      <ol class="mini-rail">
+        <li>Overdue invoice</li>
+        <li>Reminder draft</li>
+        <li>Your review</li>
+      </ol>
+      <div class="draft">
+        <dl class="mail">
+          <div><dt>From</dt><dd>Gather Tomorrow</dd></div>
+          <div><dt>To</dt><dd>Alex</dd></div>
+          <div><dt>Subject</dt><dd>Invoice #1042</dd></div>
+        </dl>
+        <p>Hi Alex, just a friendly reminder that invoice #1042…</p>
+        <p class="status">Draft ready</p>
+      </div>
+    </aside>
+  </div>
+  <div class="wrap connector" aria-hidden="true"><span></span></div>
+</section>
+
+<section id="services" class="section">
   <div class="wrap">
-    <p class="eyebrow">AI automation · for small businesses</p>
-    <h1>Spend less time on busywork.<br><span class="accent">Let AI handle the follow-ups.</span></h1>
-    <p class="lead">We help small-business owners and salespeople set up practical AI automations — payment reminders, faster quote replies, lead finding — using tools you already have. No coding required on your side.</p>
-    <div class="cta-row">
-      <a href="#book" class="btn">Book a consultation</a>
-      <a href="#notes" class="btn btn-ghost">Read the field notes</a>
+    <p class="eyebrow">Services</p>
+    <h2>What can you automate first?</h2>
+    <div class="rules rules-2">
+      <article>
+        <h3>Payment reminders</h3>
+        <dl class="svc">
+          <dt>Who it's for</dt>
+          <dd>Small-business owners chasing unpaid invoices from a sheet.</dd>
+          <dt>Trigger</dt>
+          <dd>An unpaid invoice reaches a due date.</dd>
+          <dt>What you get</dt>
+          <dd>A Gmail draft of the reminder. Nothing is sent automatically.</dd>
+          <dt>What you still control</dt>
+          <dd>Review reminder drafts in Gmail, edit if needed, then send.</dd>
+        </dl>
+        <a class="more" href="notes/payment-reminders/index.html">See example →</a>
+      </article>
+      <article>
+        <h3>Inquiry replies</h3>
+        <dl class="svc">
+          <dt>Who it's for</dt>
+          <dd>Owners and salespeople who receive quote and service inquiries by email or a web form.</dd>
+          <dt>Trigger</dt>
+          <dd>A new inquiry arrives.</dd>
+          <dt>What you get</dt>
+          <dd>A first-reply draft that uses your price notes and FAQs.</dd>
+          <dt>What you still control</dt>
+          <dd>You review the draft, edit it, and send it yourself.</dd>
+        </dl>
+        <a class="more" href="notes/inquiry-replies/index.html">See example →</a>
+      </article>
+    </div>
+    <aside class="other">
+      <h3>Other workflows we can discuss</h3>
+      <p><strong>Lead organizing.</strong> Good prospects post on social media every day, but scrolling to find them eats hours. Saved searches and summaries can collect relevant posts into one short list. You decide who to contact.</p>
+      <p>This does not include automated DMs or outreach.</p>
+      <a class="more" href="notes/lead-organizing/index.html">See example →</a>
+    </aside>
+  </div>
+</section>
+
+<section id="examples" class="section alt">
+  <div class="wrap">
+    <p class="eyebrow">Examples</p>
+    <h2>Payment-reminder automation</h2>
+    <p class="sub">One workflow for overdue invoices. Nothing is sent automatically.</p>
+    <ol class="rail">
+      <li>
+        <span class="rail-n">01</span>
+        <div>
+          <p class="step-tag step-you">Needs your review</p>
+          <h3>How it was done</h3>
+          <p>Chasing unpaid invoices means checking a spreadsheet, writing the same polite email again, and remembering who you already nudged.</p>
+          <p>Before: manual checking and copy-paste.</p>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">02</span>
+        <div>
+          <p class="step-tag step-auto">Automatic</p>
+          <h3>The workflow</h3>
+          <ol>
+            <li>Invoices live in a Google Sheet: customer, amount, due date, and whether it is paid.</li>
+            <li>A scheduled run reads the sheet and skips invoices already marked paid.</li>
+            <li>It creates a personalized Gmail draft only. It never sends.</li>
+          </ol>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">03</span>
+        <div>
+          <p class="step-tag step-you">Needs your review</p>
+          <h3>How you operate it</h3>
+          <p>Review reminder drafts in Gmail, edit if needed, then send.</p>
+          <p>The sheet records when the draft was prepared, not when you sent it. <a href="notes/payment-reminders/index.html">See the demo workflow</a>.</p>
+        </div>
+      </li>
+    </ol>
+    <p class="fallback"><a href="#notes">Field notes</a></p>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2>How we work together</h2>
+    <ol class="rail">
+      <li>
+        <span class="rail-n">01</span>
+        <div>
+          <h3>Understand your current process</h3>
+          <dl class="svc">
+            <dt>You provide</dt>
+            <dd>What is taking up your time, and how the work happens today.</dd>
+            <dt>We deliver</dt>
+            <dd>A shared description of that process, so the next step starts from the same picture.</dd>
+          </dl>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">02</span>
+        <div>
+          <h3>Confirm scope</h3>
+          <dl class="svc">
+            <dt>You provide</dt>
+            <dd>Which triggers you want, who reviews, and what must not run on its own.</dd>
+            <dt>We deliver</dt>
+            <dd>A confirmed scope: triggers, deliverables, who reviews, fees and any third-party costs (discussed with you; not listed on this site), and what will not run automatically.</dd>
+          </dl>
+        </div>
+      </li>
+      <li>
+        <span class="rail-n">03</span>
+        <div>
+          <h3>Test &amp; hand over</h3>
+          <dl class="svc">
+            <dt>You provide</dt>
+            <dd>Test data for the workflow.</dd>
+            <dt>We deliver</dt>
+            <dd>A workflow validated with that test data, an operating guide, and how to switch it off.</dd>
+          </dl>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap">
+    <p class="eyebrow">About us</p>
+    <h2>About us</h2>
+    <div class="rules rules-2">
+      <article>
+        <h3>Angela</h3>
+        <p class="pending-bio">Bio coming soon – pending Angela</p>
+      </article>
+      <article>
+        <h3>Sam</h3>
+        <p class="pending-bio">Bio coming soon – pending Angela</p>
+      </article>
     </div>
   </div>
 </section>
 
-<section id="notes" class="section">
+<section id="notes" class="section alt">
   <div class="wrap">
     <p class="eyebrow">Field notes</p>
     <h2>What we're building, written plainly</h2>
-    <p class="sub">Short notes from real small-business workflows. Format: the problem → the tools and how → before vs. after. Full articles coming soon.</p>
-    <div class="grid3">
-      <article class="card">
-        <span class="tag">Coming soon · draft excerpt</span>
-        <h3>Automated payment reminders that still sound like you</h3>
-        <dl>
-          <dt>Problem</dt><dd>Chasing unpaid invoices means checking a spreadsheet, writing the same polite email again, and remembering who you already nudged.</dd>
-          <dt>Tools &amp; how</dt><dd>Make watches a Google Sheet of invoices. When a due date passes, it prepares a reminder as a Gmail <em>draft</em> — you review and click send.</dd>
-          <dt>Before → After</dt><dd>Before: manual checking and copy-paste. After: drafts waiting in your inbox, you stay in control.</dd>
-        </dl>
-        <div class="card-foot">
-          <button class="like" type="button" aria-pressed="false" title="Likes coming soon">♡ Like</button>
-          <a href="#book" class="diy">Don't want to DIY? We can build it for your company. →</a>
+    <p class="sub">Short notes from real small-business workflows.</p>
+    <div class="note-list">
+      <article>
+        <div>
+          <p class="tag">Workflow note</p>
+          <h3>Automated payment reminders that still sound like you</h3>
+          <p class="result">Review reminder drafts in Gmail, edit if needed, then send.</p>
+          <p class="chain">Google Sheets → Make → Gmail</p>
         </div>
+        <a class="more" href="notes/payment-reminders/index.html">See the workflow →</a>
       </article>
-      <article class="card">
-        <span class="tag">Coming soon · draft excerpt</span>
-        <h3>Answering quote and service inquiries faster</h3>
-        <dl>
-          <dt>Problem</dt><dd>Inquiries arrive by email and web forms while you're busy; slow replies can lose the job.</dd>
-          <dt>Tools &amp; how</dt><dd>New inquiries are logged to a sheet, and an AI assistant drafts a first reply using your price notes and FAQs — ready for your review.</dd>
-          <dt>Before → After</dt><dd>Before: writing every reply from scratch. After: a draft ready to edit and send.</dd>
-        </dl>
-        <div class="card-foot">
-          <button class="like" type="button" aria-pressed="false" title="Likes coming soon">♡ Like</button>
-          <a href="#book" class="diy">Don't want to DIY? We can build it for your company. →</a>
+      <article>
+        <div>
+          <p class="tag">Workflow note</p>
+          <h3>Answering quote and service inquiries faster</h3>
+          <p class="result">A draft ready to edit and send.</p>
+          <p class="chain">Sheet → AI draft</p>
         </div>
+        <a class="more" href="notes/inquiry-replies/index.html">See the workflow →</a>
       </article>
-      <article class="card">
-        <span class="tag">Coming soon · draft excerpt</span>
-        <h3>Finding leads on social platforms</h3>
-        <dl>
-          <dt>Problem</dt><dd>Good prospects post on social media every day, but scrolling to find them eats hours.</dd>
-          <dt>Tools &amp; how</dt><dd>Saved searches and AI summaries collect relevant posts into one list, with a suggested next step for each — you decide who to contact.</dd>
-          <dt>Before → After</dt><dd>Before: random scrolling. After: a short, organized list to review.</dd>
-        </dl>
-        <div class="card-foot">
-          <button class="like" type="button" aria-pressed="false" title="Likes coming soon">♡ Like</button>
-          <a href="#book" class="diy">Don't want to DIY? We can build it for your company. →</a>
+      <article>
+        <div>
+          <p class="tag">Workflow note</p>
+          <h3>Finding leads on social platforms</h3>
+          <p class="result">A short, organized list to review.</p>
+          <p class="chain">Saved search → AI summary</p>
         </div>
+        <a class="more" href="notes/lead-organizing/index.html">See the workflow →</a>
       </article>
     </div>
+    <p class="section-cta">Don't want to DIY? <a href="#book">We can build it for your company.</a></p>
   </div>
 </section>
 
-<section id="tools" class="section alt">
-  <div class="wrap">
-    <p class="eyebrow">Mini tools</p>
-    <h2>Small AI tools you can try</h2>
-    <p class="sub">These try-it tools are still being written. Ready-made tools and consulting plans are on the <a href="tools/index.html">Tools page</a>.</p>
-    <div class="grid3">
-      <div class="card tool"><span class="tag">Coming soon</span><h3>Reminder email writer</h3><p>Turn invoice details into a friendly, professional payment reminder.</p></div>
-      <div class="card tool"><span class="tag">Coming soon</span><h3>Quote reply helper</h3><p>Paste a customer inquiry, get a clear first-draft reply.</p></div>
-      <div class="card tool"><span class="tag">Coming soon</span><h3>Automation idea finder</h3><p>Describe your week; see which tasks could be automated first.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="cases" class="section">
-  <div class="wrap">
-    <p class="eyebrow">Case studies</p>
-    <h2>How it works in practice</h2>
-    <div class="grid2">
-      <article class="card case">
-        <span class="tag">Case study</span>
-        <h3>Payment-reminder automation</h3>
-        <ol>
-          <li>Invoices live in a Google Sheet: customer, amount, due date, status.</li>
-          <li>A Make scenario checks the sheet on a schedule for overdue, unpaid rows.</li>
-          <li>For each one, it creates a personalized Gmail draft — nothing is sent automatically.</li>
-          <li>The owner reviews, edits if needed, and sends. The sheet records that a reminder went out.</li>
-        </ol>
+<!-- FAQPage JSON-LD lists only questions with published answers.
+     Pricing and project length are visible placeholders and are left out of the schema. -->
+<section id="faq" class="section">
+  <div class="wrap narrow">
+    <p class="eyebrow">FAQ</p>
+    <h2>Common questions</h2>
+    <p class="sub">Short answers from what this site already says. Pricing and project length are not published yet.</p>
+    <div class="faq-list">
+      <article class="faq-item">
+        <h3>What kind of companies do you help?</h3>
+        <p>Small-business owners and salespeople in the United States and Taiwan. The practical work is AI automation for follow-ups, quotes, and finding leads.</p>
       </article>
-      <article class="card case muted">
-        <span class="tag">Coming soon</span>
-        <h3>Next case study</h3>
-        <p>We're documenting another small-business automation. Check back soon.</p>
+      <article class="faq-item">
+        <h3>Do I need to know how to code?</h3>
+        <p>No. We set up practical automations using tools you already have. No coding is required on your side.</p>
+      </article>
+      <article class="faq-item">
+        <h3>How does a consultation work?</h3>
+        <p>Send your name, company, email, and what you need help with. We'll reply by email to set up a free 30-minute call to review one workflow, check feasibility, and discuss next steps. You can also write to support@gathertomorrow.com.</p>
+      </article>
+      <article class="faq-item">
+        <h3>What does it cost?</h3>
+        <p class="faq-pending">TBD – pending Angela</p>
+      </article>
+      <article class="faq-item">
+        <h3>What services do you offer?</h3>
+        <p>The site describes payment reminders and inquiry replies, using tools you already have. Lead organizing is separate and does not include automated messages or outreach. Example ready-made tools are not for sale yet. Consulting plans are one workflow, a connected set, or a custom build. Prices are not set.</p>
+      </article>
+      <article class="faq-item">
+        <h3>How long does a project take?</h3>
+        <p class="faq-pending">TBD – pending Angela</p>
       </article>
     </div>
   </div>
@@ -178,7 +395,7 @@
   <div class="wrap narrow">
     <p class="eyebrow">Book a consultation</p>
     <h2>Tell us what's taking up your time</h2>
-    <p class="sub">We'll reply by email to set up a short call.</p>
+    <p class="sub">A free 30-minute call to review one workflow, check feasibility, and discuss next steps. We'll reply by email to set it up.</p>
 
     <!-- ============================================================
          TALLY FORM EMBED GOES HERE
@@ -190,9 +407,9 @@
          <script async src="https://tally.so/widgets/embed.js"></script>
          ============================================================ -->
     <form class="form" action="mailto:support@gathertomorrow.com" method="post" enctype="text/plain">
-      <label>Name<input name="name" required></label>
-      <label>Company<input name="company"></label>
-      <label>Email<input type="email" name="email" required></label>
+      <label>Name<input name="name" autocomplete="name" required></label>
+      <label>Company<input name="company" autocomplete="organization"></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
       <label>What do you need help with?<textarea name="message" rows="4"></textarea></label>
       <button class="btn" type="submit">Send request</button>
     </form>
@@ -201,6 +418,21 @@
 </section>
 </main>
 
-<footer class="footer"><div class="wrap">© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></div></footer>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <nav aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#examples">Examples</a>
+      <a href="#about">About</a>
+      <a href="#notes">Field notes</a>
+      <a href="tools/index.html">Tools</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book a consultation</a>
+    </nav>
+    <p>© 2026 Gather Tomorrow LLC · <a href="mailto:support@gathertomorrow.com">support@gathertomorrow.com</a></p>
+  </div>
+</footer>
+<script src="assets/nav.js"></script>
 </body>
 </html>
